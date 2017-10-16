@@ -1,13 +1,9 @@
 ====================================
-(LV2) On-board low-level AVR modules
+AVR modules
 ====================================
 
 Introduction
 ------------
-
-This documents lists low level AVR microcontroller modules present 
-
-
 
 +----------------+-----------------+-----------------------------+--------------------------------------------+
 | #              | Location        | Description                 | Short functionality                        |
