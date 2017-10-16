@@ -46,7 +46,7 @@ Reference table
 +---------------+---------+-------------------------------------+------------+
 | #             | Priority| Description                         | Basis      |
 +===============+=========+=====================================+============+
-| **General Feature**                                                        |
+| `General Feature`_                                                         |
 +---------------+---------+-------------------------------------+------------+
 | LV2-GF-001-S  | HIGH    | Provide reliable wireless connection|            |
 |               |         | using TCP/IP stack                  |            |
@@ -60,8 +60,8 @@ Reference table
 +---------------+---------+-------------------------------------+------------+
 
 
-Description of selected requirements
-====================================
+General Feature
+===============
 
 This sections handles requirements that cannot be fully described in a reference table. Each of the following subsections comprises of the *ID code* and a concise description.
 
@@ -73,4 +73,3 @@ The logging system is a universal system to store sensor data on-board. It is re
     #. Provide a separate dynamically loaded library for reusability
     #. Provide easy to use lookup methods
     #. Provide a simple database viewer for the Earth-base station
-    #. Trololololol1
