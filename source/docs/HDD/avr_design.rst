@@ -64,3 +64,5 @@ Introduction
 |                |                 |                             | Operate the microscope conveyor belt and   |
 |                |                 |                             | sample backlighting.                       |
 +----------------+-----------------+-----------------------------+--------------------------------------------+
+
+Quick modification
