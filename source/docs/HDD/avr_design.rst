@@ -1,5 +1,5 @@
 ====================================
-(LV2) On-board low-level AVR modules
+AVR modules
 ====================================
 
 Introduction

@@ -11,6 +11,7 @@ Welcome to Orion Project's documentation!
     :caption: Table of Contents
     
     docs/introduction
+    docs/HDD/hardware_design_document
     docs/SDD/software_design_document
 
 
