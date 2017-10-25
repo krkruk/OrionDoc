@@ -40,33 +40,34 @@ Reference table
         * MODULE - module code e.g DM
         * NNN - reference number
         * T - requirement type e.g. S - *S*\ oftware
+        * -SR - System Requirements
 
 
 
-+---------------+---------+-------------------------------------+------------+
-| #             | Priority| Description                         | Basis      |
-+===============+=========+=====================================+============+
-| `General Feature`_                                                         |
-+---------------+---------+-------------------------------------+------------+
-| LV2-GF-001-S  | HIGH    | Provide reliable wireless connection|            |
-|               |         | using TCP/IP stack                  |            |
-+---------------+---------+-------------------------------------+------------+
-| LV2-GF-002-S  | HIGH    | Support Serial Port                 |            |
-+---------------+---------+-------------------------------------+------------+
-| LV2-GF-003-S  | HIGH    | Discover ID of the *uC*             |            |
-+---------------+---------+-------------------------------------+------------+
-| LV2-GF-004-S_ | HIGH    | Provide on-board telemetry logging  |            |
-|               |         | system based on SQLite              |            |
-+---------------+---------+-------------------------------------+------------+
++------------------+---------+-------------------------------------+------------+
+| #                | Priority| Description                         | Basis      |
++==================+=========+=====================================+============+
+| `General Feature - System Requirements`_                                      |
++------------------+---------+-------------------------------------+------------+
+| LV2-GF-001-S-SR  | HIGH    | Provide reliable wireless connection|            |
+|                  |         | using TCP/IP stack                  |            |
++------------------+---------+-------------------------------------+------------+
+| LV2-GF-002-S-SR  | HIGH    | Support Serial Port                 |            |
++------------------+---------+-------------------------------------+------------+
+| LV2-GF-003-S-SR  | HIGH    | Discover ID of the *uC*             |            |
++------------------+---------+-------------------------------------+------------+
+| LV2-GF-004-S-SR_ | HIGH    | Provide on-board telemetry logging  |            |
+|                  |         | system based on SQLite              |            |
++------------------+---------+-------------------------------------+------------+
 
 
-General Feature
-===============
+General Feature - System Requirements
+=====================================
 
 This sections handles requirements that cannot be fully described in a reference table. Each of the following subsections comprises of the *ID code* and a concise description.
 
-LV2-GF-004-S
-++++++++++++
+LV2-GF-004-S-SR
++++++++++++++++
 The logging system is a universal system to store sensor data on-board. It is required to provide following features:
     #. Store any key-value pair in a database with a timestamp    
     #. Secure the database against unexpected power loss (only last second of data logging can be lost)    

@@ -26,6 +26,9 @@ Whenever the text references to one of the following modules the module is meant
         
     Manipulator module (MM)
         hardware and software that allows the robot to grasp objects, dig etc. Think of as a human arm and hand. It includes software, uCs, on-board computers, cameras etc.
+
+    Control Panel Module (CPM)
+        hardware and software that allows a user to control the rover and acquire telemetry data without additional equipment but the rover itself. The module, in general, acts as a minimalistic version of the LV3 but is embedded into the robot.
         
     Lab module (LM)
         hardware and software that allows the robot to perform various scientific tests. It includes software, cameras, sensors etc.
