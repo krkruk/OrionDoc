@@ -23,7 +23,9 @@ The following table defines possible ranges for each of sub-modules related to l
 +---+--------------------+----------+-------------------------------------------------------+
 | 3 | Lab module         | [64..95] | These IDs are assigned to the lab module only.        |
 +---+--------------------+----------+-------------------------------------------------------+
-| 4 | Miscellaneous      | [96..255]| Miscellaneous. This values can be used but one should |
+| 4 | Control Panel      | [96..100]| These IDs are assigned to the Control Panel module.   |
++---+--------------------+----------+-------------------------------------------------------+
+| 5 | Miscellaneous      |[101..255]| Miscellaneous. This values can be used but one should |
 |   |                    |          | reference higher levels of software first.            |
 +---+--------------------+----------+-------------------------------------------------------+
 

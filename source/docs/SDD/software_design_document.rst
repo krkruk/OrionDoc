@@ -63,4 +63,7 @@ Glossary
 
     SLAM
         Simulataneous Locationing and Mapping
+
+    SPR
+        Software Problem Report
         
