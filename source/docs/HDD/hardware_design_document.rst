@@ -8,3 +8,4 @@ This document represents a general design of the uC hardware design.
     :maxdepth: 1
     
     avr_design
+    hardware_control_panel
