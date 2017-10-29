@@ -216,7 +216,7 @@ Output:
         }
     }
 
-** Sending "unfold the arm" command**
+**Sending "unfold the arm" command**
 
 Input:
 
