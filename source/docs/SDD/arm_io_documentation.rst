@@ -6,29 +6,31 @@
 Orion Arm Controller API
 ========================
 
-The following defines full public API for the arm controller. Primary arm controller has **ID** equal 32.
+The following defines full public API for the arm controller.
 
-+-----------------+------+------+-------------+---------------------------------------------------+
-| ID              | I/O  | Key  | Value range | Description                                       |
-+=================+======+======+=============+===================================================+
-| LV1-MM-001-JSON | OUT  | ID   | 32          | ID of primary arm controller                      |
-+-----------------+------+------+-------------+---------------------------------------------------+
+Primary arm controller has **ID** equal 32. This key should exist in every sent and received JSON object.
+
++-----------------+---------+------+-------------+---------------------------------------------------+
+| ID              | I/O     | Key  | Value range | Description                                       |
++=================+=========+======+=============+===================================================+
+| LV1-MM-001-JSON | IN/OUT  | ID   | 32          | ID of primary arm controller                      |
++-----------------+---------+------+-------------+---------------------------------------------------+
 
 .. note::
-    JSON object with **ID** key will be sent periodically after bootup, until arm driver will receive first command.
+    JSON object with **ID** key will be sent periodically after bootup, until arm controller will receive first command.
 
-Arm input
-=========
+Arm has control modes. **MODE** key value describes the **DATA** key structure in both input and output JSON's.
 
-Arm have control modes, describing how the driver will parse incoming data. To use one, there has to be a mode ID in JSON.
++-----------------+--------+------+-------------+----------------------+
+| ID              | I/O    | Key  | Value range | Description          |
++=================+========+======+=============+======================+
+| LV1-MM-002-JSON | IN/OUT | MODE | [0, 2]      | Arm controller mode  |
++-----------------+--------+------+-------------+----------------------+
+| LV1-MM-003-JSON | IN/OUT | DATA | N/A         | The data             |
++-----------------+--------+------+-------------+----------------------+
 
-+-----------------+------+------+-------------+---------------------------------------------------+
-| ID              | I/O  | Key  | Value range | Description                                       |
-+=================+======+======+=============+===================================================+
-| LV1-MM-002-JSON | IN   | MODE | [0, 2]      | Arm mode - how the driver parses the rest of JSON |
-+-----------------+------+------+-------------+---------------------------------------------------+
-| LV1-MM-003-JSON | IN   | DATA | N/A         | The data for the arm                              |
-+-----------------+------+------+-------------+---------------------------------------------------+
+Controller input
+================
 
 Modes list
 ~~~~~~~~~~
@@ -45,7 +47,7 @@ Modes list
 
 In *direct control mode* the **DATA** should be an object containing the data for arm motors.
 
-In *command mode* the **DATA** should be an integer (*note: this can change to object at some point*) with command number.
+In *command mode* the **DATA** should be an integer (*note: this can change to an object at some point*) with command number.
 
 Direct control mode data
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,7 +58,7 @@ The **DATA** key value in direct control mode should be an object containing key
     Values out of bounds will be treated like marginal values (e.g if we will send -1000 value, and minimal value will be -400, the value will be set to -400).
 
 .. tip::
-    Sending only the changed inputs is recommended, to shorten data parsing, because the driver will remember the last state of a motor.
+    Sending only the changed inputs is recommended, to shorten data parsing, because the controller will remember the last state of a motor.
 
 +-----------------+------+-----+-------------+---------------------------------------------------------------------------+
 | ID              | I/O  | Key | Value range | Description                                                               |
@@ -155,7 +157,7 @@ In command mode, feedback will be sent **only after executing the command**.
 For now, there is no way to stop command execution
 
 .. note::
-    But will be, execution will be terminated after receiving *ID 1* (Stop the arm movement) command. TODO.
+    But, in the future, there will be - execution will be terminated after receiving *ID 1* (Stop the arm movement) command. TODO.
 
 Feedback will contain **ID** key, and flag
 
@@ -164,3 +166,76 @@ Feedback will contain **ID** key, and flag
 +=================+======+======+=============+========================================================+
 | LV1-MM-301-JSON | OUT  | CMDF | [0, 1]      | 0 if command failed, 1 if command executed sucessfully |
 +-----------------+------+------+-------------+--------------------------------------------------------+
+
+
+Examples
+========
+
+.. note::
+    Electric current values in example feedback is not the real current draw; it's just an example
+
+**Bootup JSON sent by arm**
+
+Output:
+
+.. sourcecode:: json
+
+    {
+        "ID": 32
+    }
+
+**Setting the turret speed to 200 and extending the arm (with both actuators and extending motor)**
+
+Input:
+
+.. sourcecode:: json
+
+    {
+        "ID": 32,
+	    "MODE": 1,
+	    "DATA": {
+		    "TRM": 200,
+		    "LAA": 1,
+		    "UAA": 1,
+		    "AEM": 400
+	    }
+    }
+
+Output:
+
+.. sourcecode:: json
+
+    {
+        "ID": 32,
+        "MODE": 1,
+        "DATA": {
+            "TRM": [200, 65, 0],
+            "LAA": [1, 50, 0],
+            "UAA": [1, 45, 0],
+            "AEM": [400, 35, 0]
+        }
+    }
+
+** Sending "unfold the arm" command**
+
+Input:
+
+.. sourcecode:: json
+
+    {
+        "ID": 32,
+        "MODE": 2,
+        "DATA": 3
+    }
+
+Output:
+
+.. sourcecode:: json
+
+    {
+        "ID": 32,
+        "MODE": 2,
+        "DATA": {
+            "CMDF": 1
+        }
+    }
