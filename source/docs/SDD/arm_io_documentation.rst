@@ -100,6 +100,11 @@ Arm output (feedback)
 
 Arm feedback depends from last command's mode.
 
+.. note::
+	If the input JSON **ID** will be invalid, controller will return JSON with **ID** and empty **DATA** object.
+	
+	If the **MODE** field will be invalid, controller will return JSON with **ID**, empty **DATA** object and **MODE** sent to it.
+
 Direct control mode
 ~~~~~~~~~~~~~~~~~~~
 
@@ -145,6 +150,8 @@ The returned JSON object will contain **ID** key, and following data
 
 .. note::
     This could potentially be reworked to JSON object with keys, but - since performance may be an issue - for now, it will be an array
+
+In case of an error - e.g invalid motor key is sent, returned array will be **[0, 0, 1]**
 
 Command mode
 ~~~~~~~~~~~~
