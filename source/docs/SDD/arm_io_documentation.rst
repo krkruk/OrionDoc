@@ -164,7 +164,7 @@ Feedback will contain **ID** key, and flag
 +-----------------+------+------+-------------+--------------------------------------------------------------------------------------------+
 | ID              | I/O  | Key  | Value range | Description                                                                                |
 +=================+======+======+=============+============================================================================================+
-| LV1-MM-301-JSON | OUT  | CMDF | [-1, 1]     | 0 if command failed, 1 if command executed sucessfully, -1 if invalid command ID was sent |
+| LV1-MM-301-JSON | OUT  | CMDF | [-1, 1]     | 0 if command failed, 1 if command executed sucessfully, -1 if invalid command ID was sent  |
 +-----------------+------+------+-------------+--------------------------------------------------------------------------------------------+
 
 
