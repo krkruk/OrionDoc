@@ -1,0 +1,13 @@
+digraph MVC_pattern {
+
+    rankdir="RL";
+    
+    m [label="MODEL"];
+    v [label="VIEW"];
+    c [label="CONTROLLER"];
+    
+    v -> c [dir="both"];
+    c -> m;
+    m -> v;
+    {rank=same m c}
+}
