@@ -2,3 +2,6 @@
 
 build
 
+# ignore text editor
+.vscode
+

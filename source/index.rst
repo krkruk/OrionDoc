@@ -14,6 +14,7 @@ Welcome to Orion Project's documentation!
     docs/HDD/hardware_design_document
     docs/SDD/software_design_document
     docs/Tools/available_tools
+    docs/zebrania/index
 
 
 Indices and tables
