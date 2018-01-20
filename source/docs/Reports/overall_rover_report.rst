@@ -68,19 +68,19 @@ Field Trials
 +-------------+---------------------------------------------+-------------------------------+
 | TR-FT-0002  | Provide (optionally) a modular rover design | Rules/Field trials/General-b  |
 +-------------+---------------------------------------------+-------------------------------+
-| TR-FW-0003  | Provide compliance with technological       | Rules/Field trials/General-d  |
+| TR-FT-0003  | Provide compliance with technological       | Rules/Field trials/General-d  |
 |             | priorities according to the task description|                               |
 +-------------+---------------------------------------------+-------------------------------+
-| TR-FW-0004  | Ensure the rover and operators perform      | Rules/Field trials/General-f  |
+| TR-FT-0004  | Ensure the rover and operators perform      | Rules/Field trials/General-f  |
 |             | at utmost capabilities                      |                               |
 +-------------+---------------------------------------------+-------------------------------+
-| TR-FW-0005  | Ensure a ground control operator is well    | Rules/Field trials/General-f:g|
+| TR-FT-0005  | Ensure a ground control operator is well    | Rules/Field trials/General-f:g|
 |             | trained                                     |                               |
 +-------------+---------------------------------------------+-------------------------------+
-| TR-FW-0006  | Ensure the rover can operate both indoor    | Rules/Challenge site details-a|
+| TR-FT-0006  | Ensure the rover can operate both indoor    | Rules/F.T/Challenge site d.-a |
 |             | and outdoor                                 |                               |
 +-------------+---------------------------------------------+-------------------------------+
-| TR-FW-0007  | Sustain the following weather conditions    | Rules/Challenge site details-b|
+| TR-FT-0007  | Sustain the following weather conditions    | Rules/F.T/Challenge site d.-b | 
 |             | (outdoors):                                 |                               |
 |             |                                             |                               |
 |             |  * temperature: [15..30]°C                  |                               |
@@ -88,21 +88,21 @@ Field Trials
 |             |  * rain: drizzle                            |                               |
 |             |  * insolation: [weak..string] sunlight      |                               |
 +-------------+---------------------------------------------+-------------------------------+
-| TR-FW-0008  | The rover traverses multiple types of       | Rules/Challenge site details-b|
+| TR-FT-0008  | The rover traverses multiple types of       | Rules/Challenge site details-b|
 |             | surface: sandy, non-cohesive sold; hard     |                               |
 |             | terrain; industrial surface (e.g. concrete) |                               |
 +-------------+---------------------------------------------+-------------------------------+
-| TR-FW-0009  | The rover is capable of fulfilling tasks    | Rules/Operations-a            | 
+| TR-FT-0009  | The rover is capable of fulfilling tasks    | Rules/F.T/Operations-a        | 
 +-------------+---------------------------------------------+-------------------------------+
-| TR-FW-0010  | The rover is immune to initial conditions   | Rules/Operations-b            | 
+| TR-FT-0010  | The rover is immune to initial conditions   | Rules/F.T/Operations-b        | 
 |             | of the task (e.g. heading, position)        |                               |
 +-------------+---------------------------------------------+-------------------------------+
-| TR-FW-0011  | The rover completes the task within 25min.  | Rules/Operations-d            |
+| TR-FT-0011  | The rover completes the task within 25min.  | Rules/F.T/Operations-d        |
 +-------------+---------------------------------------------+-------------------------------+
-| TR-FW-0012  | The video can be streamed unless the        | Rules/Operations-h            |
+| TR-FT-0012  | The video can be streamed unless the        | Rules/F.T/Operations-h        |
 |             | requirements state differently              |                               |
 +-------------+---------------------------------------------+-------------------------------+
-| TR-FW-0013  | The rover does not interfere with systems of| Rules/Operations-k            |
+| TR-FT-0013  | The rover does not interfere with systems of| Rules/F.T/Operations-k        |
 |             | other teams                                 |                               |
 +-------------+---------------------------------------------+-------------------------------+
 
@@ -258,7 +258,7 @@ Maintenance task
 +------------+---------------------------------------------+----------------------------+
 | TR-MT-007/1| Handle IEC 60309 plug with max.10cm diameter| Rules/M.T/Gen. req./i)     |
 +------------+---------------------------------------------+----------------------------+
-| TR-MT-008  | PREVENT FROM DAMAGING ANY OBJECT!           | Rules/M.T/Exp. results/d)  |
+| TR-MT-008  | **PREVENT FROM DAMAGING ANY OBJECT!**       | Rules/M.T/Exp. results/d)  |
 +------------+---------------------------------------------+----------------------------+
 | TR-MT-009  | Implement task automation                   | Rules/M.T/Description      |
 +------------+---------------------------------------------+----------------------------+
@@ -277,6 +277,70 @@ Maintenance task
 | TR-MT-009/5| Provide automatic approach to the element   | Rules/M.T/Add. info/3d)    |
 |            | and return to the idle state (min. 20cm from|                            |
 |            | the panel surface)                          |                            |
++------------+---------------------------------------------+----------------------------+
+
+
+Collection Task
+++++++++++++++++
+
+The Collection Task is a simulation of the Sample Fetching Rover (SFR). The concept is to provide two types of rovers. One is a mobile laboratory platform that collects a sample and places it into a container. The other rover is a seek-and-pick vehicle that collects containers and delivers them to the on-Mars laboratory or to the Mars Earth Return Vehicle (MERV). The task handles the latter case.
+
++------------+---------------------------------------------+----------------------------+
+| #ID        | Description                                 | Justification              |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-001  | Technological priorities:                   | Rules/Collection task      |
+|            |                                             |                            |
+|            |  * task automation                          |                            |
+|            |  * end-effector performance                 |                            |
+|            |  * container and cache design               |                            |
+|            |  * manipulator performance                  |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-002  | Reach destination of the cache              | Rules/C.T/Task Scen./a)-a  |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-003  | Provide a manipulation device that is able  | Rules/C.T/General req./b)  |
+|            | to pick up a cache and place it into the    |                            |
+|            | container                                   |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-003/1| Adjust accuracy and performance of the      | Rules/C.T/Tech. prior./4a:b|
+|            | manipulator according to the task           |                            |
+|            | requirements                                |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-003/2| Dig out/pull a partially buried cache       | Rules/C.T/Add. info/a)     |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-004  | Design a container for caches               | Rules/C.T/General req./b)  |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-004/1| Provide at least 4 slots for caches         | Rules/C.T/General req./e)  |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-004/2| Immobilize a cache when placed in slot      | Rules/C.T/General req./d)  |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-004/3| Store a cache in vertical position          | Rules/C.T/General req./d)  |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-004/4| Design a slot based on a geometry of the    | Rules/C.T/General req./f)  |
+|            | cache (p.20 of the Rules)                   |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-004/5| Detach a container when needed              | Rules/C.T/General req./b)  |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-004/6| Facilitate placing the cache into the       | Rules/C.T/Tech. prior./3)-a|
+|            | container taking into account limited       |                            |
+|            | accuracy of the manipulator and             |                            | 
+|            | environmental conditions                    |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-005  | Provide task automation                     | Rules/C.T/Tech. prior./1)  |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-005/1| Detect and localize a cache                 | Rules/C.T/Tech. prior./1)-a|
++------------+---------------------------------------------+----------------------------+
+| TR-CT-005/2| Approach to the cache automatically         | Rules/C.T/Tech. prior./1)-b|
++------------+---------------------------------------------+----------------------------+
+| TR-CT-005/3| Pick up the cache automatically             | Rules/C.T/Tech. prior./1)-c|
++------------+---------------------------------------------+----------------------------+
+| TR-CT-005/4| Place the cache into a container            | Rules/C.T/Description      |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-005/5| Detect a partially buried cache             | Rules/C.T/Add. info/b)     |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-006  | Prepare photographic documentation of the   | Rules/C.T/Task Scen./a)-c  |
+|            | cache location                              |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-CT-007  | Detach and place at a desired location      | Rules/C.T/Task Scen./a:b)  |
 +------------+---------------------------------------------+----------------------------+
 
 
