@@ -10,7 +10,7 @@ General
 
 +------------+---------------------------------------------+----------------------------+
 | #ID        | Description                                 | Justification              |
-+------------+---------------------------------------------+----------------------------+
++============+=============================================+============================+
 | TR-G-0001  | Provide a standalone, mobile platform       | Rules/General requirements |
 +------------+---------------------------------------------+----------------------------+
 | TR-G-0002  | Do not exceed 50kg mass per Task            | Rules/System weight        |
@@ -44,7 +44,8 @@ General
 | TR-G-0015  | Introduce >5s delay before execution of any | Rules/Activity indicator   |
 |            | operation. Light activity indicator         |                            |
 +------------+---------------------------------------------+----------------------------+
-| TR-G-0016  | Delay >5s any autonomous command execution  | Rules/Activity indicator   |
+| TR-G-0015  | Activate the activity indicator when the    | Rules/Activity indicator   |
+|            | rover is ready to move (any of its part)    |                            |
 +------------+---------------------------------------------+----------------------------+
 | TR-G-0017  | Provide wireless standard one of: Radio     | Rules/Comm. requirements   |
 |            | Amateur bands, WiFi (2.4, 5GHz), ISM        |                            |
@@ -58,12 +59,49 @@ General
 | TR-G-0020  | Provide RF Spectrum measurements            | Rules/Comm. requirements   |
 +------------+---------------------------------------------+----------------------------+
 
+
+Autonomy predicates
+*******************
+
++------------+---------------------------------------------+----------------------------+
+| #ID        | Description                                 | Justification              |
++============+=============================================+============================+
+| TR-AI-001  | Provide automation for extra scoring for    | Rules/Rover autonomy       |
+|            | all tasks                                   |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-AI-002  | Implement (at least) the following set      | Rules/Rover autonomy       |
+|            | commands: *start, working, wait, waiting,*  |                            |
+|            | *resume, stop*                              |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-AI-002/1| Extend the set of commands defined in       | Rules/Rover autonomy       |
+|            | TR-AI-002 if required.                      |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-AI-002/2| Sending any other command but one defined   | Rules/Rover autonomy       |
+|            | in TR-AI-002 is prohibited                  |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-AI-003  | Provide telemetry                           | Rules/Rover autonomy       |
++------------+---------------------------------------------+----------------------------+
+| TR-AI-003/1| Record telemetry data to allow open access  | Rules/Rover autonomy       |
+|            | sharing                                     |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-AI-004  | Provide compliance with safety precautions  | Rules/Rover autonomy       |
+|            | defined in `General`_                       |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-AI-004/1| Delay >5s any autonomous command execution  | Rules/Automatic functional.|
++------------+---------------------------------------------+----------------------------+
+| TR-AI-004/2| Avoid immediate and rapid movements         | Rules/Automatic functional.|
++------------+---------------------------------------------+----------------------------+
+
+
+
+
+
 Field Trials
 ************
 
 +-------------+---------------------------------------------+-------------------------------+
 | #ID         | Description                                 | Justification                 |
-+-------------+---------------------------------------------+-------------------------------+
++=============+=============================================+===============================+
 | TR-FT-0001  | Ensure the rover is safe to the surroundings| Rules/Field trials/General-a  |
 +-------------+---------------------------------------------+-------------------------------+
 | TR-FT-0002  | Provide (optionally) a modular rover design | Rules/Field trials/General-b  |
@@ -111,7 +149,7 @@ Science task
 
 +------------+---------------------------------------------+----------------------------+
 | #ID        | Description                                 | Justification              |
-+------------+---------------------------------------------+----------------------------+
++============+=============================================+============================+
 | TR-ST-001  | Technological priorities:                   | Rules/Science task         |
 |            |                                             |                            |
 |            |  * drilling                                 |                            |
@@ -201,7 +239,7 @@ Maintenance task
 
 +------------+---------------------------------------------+----------------------------+
 | #ID        | Description                                 | Justification              |
-+------------+---------------------------------------------+----------------------------+
++============+=============================================+============================+
 | TR-MT-001  | Technological priorities:                   | Rules/Maintenance task     |
 |            |                                             |                            |
 |            |  * tele-operation                           |                            |
@@ -287,7 +325,7 @@ The Collection Task is a simulation of the Sample Fetching Rover (SFR). The conc
 
 +------------+---------------------------------------------+----------------------------+
 | #ID        | Description                                 | Justification              |
-+------------+---------------------------------------------+----------------------------+
++============+=============================================+============================+
 | TR-CT-001  | Technological priorities:                   | Rules/Collection task      |
 |            |                                             |                            |
 |            |  * task automation                          |                            |
@@ -342,6 +380,65 @@ The Collection Task is a simulation of the Sample Fetching Rover (SFR). The conc
 +------------+---------------------------------------------+----------------------------+
 | TR-CT-007  | Detach and place at a desired location      | Rules/C.T/Task Scen./a:b)  |
 +------------+---------------------------------------------+----------------------------+
+
+
+Traverse task
++++++++++++++
+
+.. note::
+
+    Any autonomous task, especially the traverse task, is highly demanding and of high risk. An iterative approach is suggested.
+
++------------+---------------------------------------------+----------------------------+
+| #ID        | Description                                 | Justification              |
++============+=============================================+============================+
+| TR-TT-001  | Provide compliance with                     | Rules/T.T/General req./a)  |
+|            | `Autonomy predicates`_                      |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-002  | Navigate thru terrain without visuals at    | Rules/T.T/Description      |
+|            | the ground control                          |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-002/1| Provide step-by-step approach:              | Rules/T.T/Description      |
+|            |                                             |                            |
+|            |  * navigate blindly with an operator in     |                            |
+|            |    a control loop                           |                            |
+|            |  * eliminate the operator from the control  |                            |
+|            |    loop                                     |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-002  | Reach 4 way-points + 1 extra one in         | Rules/T.T/Description      |
+|            | challenging terrain                         |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-003  | Send location data to the ground control    | Rules/T.T/Task Scen./a)    |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-003/1| Broadcast only position ([x,y,z]) and       | Rules/T.T/General req./e)  |
+|            | orientation data (e. g. quaternion)         |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-003/2| Visualize localization data in the most     | Rules/T.T/Add. info/b)     |
+|            | operator-friendly manner                    |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-004  | Perform planning and compute parameters     | Rules/T.T/Description      |
+|            | within the rover system, preferably on-board|                            |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-004/1| Perform localization computations on-board  | Rules/T.T/General req./b)  |
+|            | using preferably natural terrain features   |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-004/2| Apply initial data set: start position and  | Rules/T.T/General req./f)  |
+|            | limited heading                             | Rules/T.T/Add. info/a)     |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-005  | Apply any navigational technique but GNSS   | Rules/T.T/General req./d)  |
+|            | receivers                                   |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-006  | Provide a detailed description of applied   | Rules/T.T/Add. info./d)    |
+|            | navigational techniques                     |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-007  | Store telemetric data                       | Rules/T.T/Exp. results/d)  |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-007/1| Visualize stored, telemetric data           | Rules/T.T/Task scen./d)    |
++------------+---------------------------------------------+----------------------------+
+| TR-TT-007/2| Compare results (executed route) with a     | Rules/T.T/Task scen./d)    |
+|            | computed traverse plan at the beginning     |                            |
++------------+---------------------------------------------+----------------------------+
+
 
 
 Glossary
