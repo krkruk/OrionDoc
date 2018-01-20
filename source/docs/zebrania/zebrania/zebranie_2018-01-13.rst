@@ -65,20 +65,20 @@ Przydział prac
         * dokończenie modułu Bełchatów
     * Krzysiek: 
         * przygotować use casy, wrzucić dokumentację (link) jako publiczne dla każdego
-        * rozpocząć implementację skryptowania jazdy w module ASS (Automatic Scripted Steering)
+        * rozpocząć implementację skryptowania jazdy
         * ukończyć małego Oriona do testów Computer Vision        
-    * Agnieszka: zrealizowanie architektury PENIS (Port Extending for Network Integrated Synchronization) dla podwozia
+    * Agnieszka: zrealizowanie architektury dla modułu jazdy
 
 .. warning:: **MILESTONE**
 
-    Kluczowe jest, by podstawowe moduły łazika były zakończone jak najszybciej. Moduł jazdy (wraz modułem PENIS) i moduł manipulatora powinny funkcjonować do końca lutego w trybie podstawowym (sterowanie mocą). Do końca marca obecne powinny być enkodery, by rozpocząć testy jazdy autonomicznej (co najmniej akwizycja danych do celów ich przetworzenia).
+    Kluczowe jest, by podstawowe moduły łazika były zakończone jak najszybciej. Moduł jazdy i moduł manipulatora powinny funkcjonować do końca lutego w trybie podstawowym (sterowanie mocą). Do końca marca obecne powinny być enkodery, by rozpocząć testy jazdy autonomicznej (co najmniej akwizycja danych do celów ich przetworzenia).
 
 .. figure:: img/penis_architecture.jpg
     :scale: 25 %
     :align: center
     :alt: Architektura PENIS
 
-    Rysunek poglądowy reprezentujcy architekturę PENIS.
+    Rysunek poglądowy reprezentujcy architekturę dla elektroniki jazdy.
 
 
 .. note::
