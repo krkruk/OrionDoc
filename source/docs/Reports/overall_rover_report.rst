@@ -196,6 +196,89 @@ Science task
 | TR-ST-010  | Mitigate reaction forces to the rover body  | Rules/S.T/Gen. req/m)      |
 +------------+---------------------------------------------+----------------------------+
 
+Maintenance task
+*****************
+
++------------+---------------------------------------------+----------------------------+
+| #ID        | Description                                 | Justification              |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-001  | Technological priorities:                   | Rules/Maintenance task     |
+|            |                                             |                            |
+|            |  * tele-operation                           |                            |
+|            |  * task automation                          |                            |
+|            |  * end-effector                             |                            |
+|            |  * manipulator performance                  |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-002  | Reach a destination                         | Rules/M.T/Task Scen./1)    |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-003  | Operate controls at height [0.2..1.5]m      | Rules/M.T/Gen. req./d)     |
+|            | above the ground level                      |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-003/1| Provide intuitive and ergonomic UI          | Rules/M.T/Description      |
+|            | at ground control                           |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-003/2| Provide immersive tele-operator interface   | Rules/M.T/Description      |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-003/3| Provide a set of sensors to build spatial   | Rules/M.T/Description      |
+|            | awareness to the user                       |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-003/4| Provide manipulator force feedback data     | Rules/M.T/Description      |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-003/5| Detect AR/QR tags and measure distance      | Rules/M.T/Add. info/2)     |
+|            | between each of them                        |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-003/6| Uncover MLI-like materials (Multi-Layer     | Rules/M.T/Gen. req./k)     |
+|            | Insulation) e.g. Velcro without damaging it |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-003/7| Provide a set of tools adequate for the task| Rules/M.T/Tech. Prior./3a) |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-004  | Set state of switches                       | Rules/M.T/Task Scen./1a)   |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-004/1| Operate on industrial grade elements        | Rules/M.T/Gen. req./b)     |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-004/2| Switch a lever switch                       | Rules/M.T/Gen. req./c)     |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-004/3| Rotate a knob                               | Rules/M.T/Gen. req./c)     |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-005  | Set value with a knob                       | Rules/M.T/Task Scen./2b)   |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-005/1| Provide a camera that is capable of reading | Rules/M.T/Gen. req./h)     |
+|            | a value from the display in distance <15cm  |                            |
+|            | from the knob                               |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-006  | Measure voltage                             | Rules/M.T/Task Scen./1b)   |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-006/1| Voltage range: [1.0.. 24.0] VDC             | Rules/M.T/Gen. req./f)     |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-006/2| Measurement accuracy: 0.5 VDC               | Rules/M.T/Gen. req./g)     |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-006/3| Slot shape: German type F plugs and sockets | Rules/M.T/Gen. req./e)     |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-007  | Grasp a high-power plug and plug it         | Rules/M.T/Task Scen./3)    | 
++------------+---------------------------------------------+----------------------------+
+| TR-MT-007/1| Handle IEC 60309 plug with max.10cm diameter| Rules/M.T/Gen. req./i)     |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-008  | PREVENT FROM DAMAGING ANY OBJECT!           | Rules/M.T/Exp. results/d)  |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-009  | Implement task automation                   | Rules/M.T/Description      |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-009/1| Detect spacial parameters                   | Rules/M.T/Tech. Prior./2a) |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-009/2| Suggest an action for the detected element  | Rules/M.T/Tech. Prior./2a) |
+|            | (e.g. toggle button switch)                 |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-009/3| Provide data (images, numerics) of detected | Rules/M.T/Add. info/3a)    | 
+|            | parameters (e.g. distance from button,      |                            |
+|            | desired action etc.)                        |                            |
++------------+---------------------------------------------+----------------------------+ 
+| TR-MT-009/4| Store, track, recover telemetry data with   | Rules/M.T/Add. info/3a:c)  |
+|            | spacial parameters                          |                            |
++------------+---------------------------------------------+----------------------------+
+| TR-MT-009/5| Provide automatic approach to the element   | Rules/M.T/Add. info/3d)    |
+|            | and return to the idle state (min. 20cm from|                            |
+|            | the panel surface)                          |                            |
++------------+---------------------------------------------+----------------------------+
+
 
 Glossary
 --------
