@@ -7,15 +7,11 @@ Welcome to Orion Project's documentation!
 =========================================
 
 .. toctree::
-    :maxdepth: 2
-    :caption: Table of Contents
-    
-    docs/introduction
-    docs/HDD/hardware_design_document
-    docs/SDD/software_design_document
-    docs/Reports/collection_of_reports
-    docs/Tools/available_tools
-    docs/zebrania/index
+   :maxdepth: 2
+   :caption: Table of Contents
+
+   common/templates/generic_template
+
 
 
 Indices and tables
