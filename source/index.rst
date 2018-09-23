@@ -10,8 +10,7 @@ Welcome to Orion Project's documentation!
    :maxdepth: 2
    :caption: Table of Contents
 
-   common/templates/generic_template
-
+   documents/requirements/system_requirements_document
 
 
 Indices and tables
