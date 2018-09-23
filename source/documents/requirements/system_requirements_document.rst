@@ -100,7 +100,7 @@ Group label definitions:
 
    * - REQ-SAFE-0013
      - The emergency stop button shall isolate the batteries from the system by single button hit.
-     - The stop button shall cut the power circuit and keep it in such state until the rover is reset. The only exception are batteries installed in laptops that are not mandatory to be separated.
+     - The stop button shall cut the power circuit and keep it in such state until the rover is reset. The only exception is batteries installed in laptops that are not mandatory to be separated.
 
    * - REQ-SAFE-0014
      - The emergency stop button shall be installed in an easily accessible location. The location shall not inflict any injurers to anyone who hits the button.
@@ -135,10 +135,10 @@ Group label definitions:
      - During this time the rover should remain still.
 
 
-[TELE] Teleoperations and telemetry requirements
+[TELE] Teleoperation and telemetry requirements
 --------------------------------------------------------------------------------
 
-.. list-table:: Safety requirements table
+.. list-table:: Teleoperation and telemetry requirements
    :header-rows: 1
 
    * - ID
@@ -161,3 +161,53 @@ Group label definitions:
      - Team may be asked to provide access to power circuits in non-invasive manners to measure power consumption of the rover independently by the jury.
      - This is to provide an exteral logging system.
 
+
+[GNRL] General rover requirements
+--------------------------------------------------------------------------------
+
+.. list-table:: General rover requirements
+   :header-rows: 1
+
+   * - ID
+     - Requirement
+     - Description
+
+   * - REQ-GNRL-0010
+     - A rover shall be a standalone, mobile platform.
+     - No thethers are allowed
+
+   * - REQ-GNRL-0020
+     - The mass of the rover should not exceed 50-60kg
+     - The heavier rover will be penalized and lighter one rewarded.
+
+   * - REQ-GNRL-0030
+     - It should be possible to inscribe the rover into an envelope shape of 0.75m diameter
+     - General advise when building a rover
+
+   * - REQ-GNRL-0040
+     - The maximum speed of the rover shall not exceed 0.5 m/s
+     - Real Mars rovers move even slower. Speed of 0.5 m/s provides additional safety margin in case the rover is out of control
+
+   * - REQ-GNRL-0050
+     - The rover shall keep its connection with a ground control facility at up 100m distance
+     - General terrain conditions that can occur during the Challenge
+
+   * - REQ-GNRL-0060
+     - The Team shall be ready to deploy an antenna mast in a distance of 20m out of the ground control facility
+     - Ground control facilities are unknown til the Challenge is started
+
+   * - REQ-GNRL-0070
+     - The rover shall withstand temperatures between 15 and 30 degrees Celcius
+     - Usual temperatures in September in Poland
+
+   * - REQ-GNRL-0080
+     - The rover shall withstand wind gusts, light drizzle and high sunlight levels
+     - The Challenge site may be outdoor
+
+   * - REQ-GNRL-0090
+     - The rover shall be able to traverse sandy, non-cohesive soil, hard and dry terrain as well as cobbled roads or other industrial surface types.
+     - It expected the rover shall operate in off-road conditions as well as in industrial ones.
+
+   * - REQ-GNRL-0100
+     - The rover shall transmit video signal to the ground control for tele-operation purposes
+     - Video feedback is essential to perform reliable, robust, human-driven, in-field scenarios
