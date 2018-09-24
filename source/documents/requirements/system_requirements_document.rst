@@ -14,7 +14,7 @@ Purpose of the document
 
 The aim of this document is to enumerate a set of system requirements.
 
-Executive summary
+Scope of the document
 --------------------------------------------------------------------------------
 
 .. Describe briefly each chapter and what are final results of this document e.g. whether an assumed aim has been achieved.
@@ -25,9 +25,10 @@ The document presents requirements in the following sections:
    * Safety requirements
    * Teleoperations and telemetry requirements
    * General rover requirements
+   * Robotic arm maneuverability requirements
    * Scientific mission requirements
    * Terrain traversal requirements
-   * Blind traversal requirements
+   * Autonomous traversal requirements
    * Power consumption requirements
 
 
@@ -38,7 +39,7 @@ Acronyms
 
 .. include:: /common/acronyms/acronyms_table.rst
 
-Terms
+Terms and definitions
 ================================================================================
 
 .. A list of terms that require explanation to the reader.
@@ -48,6 +49,9 @@ Terms
 
 Requirements
 ================================================================================
+
+.. note:: 
+   Consider split the requirements identified below into groups
 
 General information
 --------------------------------------------------------------------------------
@@ -211,3 +215,15 @@ Group label definitions:
    * - REQ-GNRL-0100
      - The rover shall transmit video signal to the ground control for tele-operation purposes
      - Video feedback is essential to perform reliable, robust, human-driven, in-field scenarios
+       
+
+[SCIE] Scientific mission requirements
+--------------------------------------------------------------------------------
+
+.. list-table:: General rover requirements
+   :header-rows: 1
+
+   * - ID
+     - Requirement
+     - Description
+

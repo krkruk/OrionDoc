@@ -1,8 +1,8 @@
-.. list-table:: Terms
+.. list-table:: Terms and definitions
    :header-rows: 1
 
    * - Term
-     - Description
+     - Definition
 
    * - Ground control
      - A place where a team can send commands to the rover and receive feedback data.

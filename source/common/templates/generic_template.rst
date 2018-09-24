@@ -11,7 +11,7 @@ Purpose of the document
 --------------------------------------------------------------------------------
 .. Describe briefly what is to be expected from reading of this document.
 
-Executive summary
+Scope of the document
 --------------------------------------------------------------------------------
 
 .. Describe briefly each chapter and what are final results of this document e.g. whether an assumed aim has been achieved.
@@ -24,12 +24,25 @@ Acronyms
 
 .. include:: /common/acronyms/acronyms_table.rst
 
-Terms
+Terms and definitions
 ================================================================================
 
 .. A list of terms that require explanation to the reader.
 
 .. include:: /common/terms/terms_table.rst
+
+Applicable documents
+================================================================================
+
+.. A list of applicable documents to be placed as a reference to the project.
+   For some of the documents this part is non-mandatory.
+
+.. list-table:: Terms and definitions
+   :header-rows: 1
+
+   * - Reference ID
+     - Title
+     - Short document description
 
 
 Section 1
