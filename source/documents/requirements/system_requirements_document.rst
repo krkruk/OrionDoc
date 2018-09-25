@@ -217,7 +217,7 @@ Group label definitions:
      - Video feedback is essential to perform reliable, robust, human-driven, in-field scenarios
        
 
-[SCIE] Scientific mission requirements
+[ARMM] Robotic arm maneuverability requirements
 --------------------------------------------------------------------------------
 
 .. list-table:: General rover requirements
@@ -227,3 +227,108 @@ Group label definitions:
      - Requirement
      - Description
 
+[SCIE] Scientific mission requirements
+--------------------------------------------------------------------------------
+
+.. list-table:: Scientific mission requirements
+   :header-rows: 1
+
+   * - ID
+     - Requirement
+     - Description
+
+   * - REQ-SCIE-0010
+     - The rover shall retrieve several types of geological samples
+     - This is to complete an extensive geological trial
+
+   * - REQ-SCIE-0011
+     - The rover shall retrieve 3 surface samples
+     - The sample can be either a hard rock or loose soil
+
+   * - REQ-SCIE-0012
+     - The rover shall excavate a trench
+     - The trench may reveal some interesting geological structure
+
+   * - REQ-SCIE-0013
+     - The trench shall have minimum 30cm length, 5cm depth and a steep wall that clearly presents soil layers
+     - The trench may reveal some interesting geological structure
+
+   * - REQ-SCIE-0020
+     - The rover shall be equiped with a set of containers
+     - In order to store a speciment it is required to provide reliable, sealed containers
+
+   * - REQ-SCIE-0021
+     - A container shall be sealed
+     - The sealed container is a must to prevent a speciment from contaminating
+
+   * - REQ-SCIE-0022
+     - The container shall provide capacity for at least 25g of a specimen. Preferably, 150g of speciment should be a goal
+     - The greater amount of the speciment, more scientific trials can be performedo
+
+   * - REQ-SCIE-0023
+     - The container shall provide quality container sealing
+     - Each container must provide sufficient quality of sealing to prevent contamination
+
+   * - REQ-SCIE-0024
+     - The rover shall be equipped with at least one specimen container
+     - Otherwise, the rover will not be able to complete a task
+
+   * - REQ-SCIE-0025
+     - The design of a container should be designed to keep real mission requirements in mind
+     - The design shall correspond real mission requirements so the construction possibly can be reused in a Mars mission
+
+   * - REQ-SCIE-0030
+     - The rover shall retrieve a deep soil sample
+     - The deep soil sample is a must to fully verify geological traits of Mars
+
+   * - REQ-SCIE-0031
+     - The rover shall retrieve the sample from 35cm below the surface
+     - The deep soil sample is a must to fully verify geological traits of Mars
+
+   * - REQ-SCIE-0032
+     - The rover shall be prepared to retrieve a deep soil sample from the soil of various consistency
+     - The soil may very from loose soil to hard gypsum. Hard nuggets can be expected.
+
+   * - REQ-SCIE-0033
+     - The speciment should be undisturbed, umixed, presenting clearly layered structure.
+     - This is to provide maximum information e.g. layer stucture in terms of geological requirements
+
+   * - REQ-SCIE-0034
+     - The deep soil sample should be retrieved without exposure to the external conditions such as atmosphere
+     - This prevents the sample to release its, presumably, gases
+
+   * - REQ-SCIE-0040
+     - The rover shall collect scientific-relevant data
+     - This is the purpose of the mission...
+
+   * - REQ-SCIE-0041
+     - The rover shall collect photographic documentation of each sample
+     - Photographic documentation is a key to an in-depth scientific analysis
+       
+   * - REQ-SCIE-0042
+     - The rover shall collect photographic documentation of a sampling area
+     - Collecting photographic documentation of a vicinity where a sample is collected is as much important as collecting the sample itself
+
+   * - REQ-SCIE-0043
+     - The rover shall collect images in resolution minimum 800x600 pixels.
+     - The specimen should occupy a major part of image
+
+   * - REQ-SCIE-0044
+     - The rover should perform in-situ sample analysis
+     - The more in-situ measurements is performed, the better. Weight, volume others parameters
+
+   * - REQ-SCIE-0044
+     - The rover should provide several measureable parameters of the sampling area
+     - Weather may influence on conditions in which the sample is collected. Any measurement that may help determine wheather conditions is of a great help for scientists.
+       
+   * - REQ-SCIE-0045
+     - The rover shall preserve all logs and documentation
+     - Unstructured and preferably structured data is a must to perform scientific trials
+
+   * - REQ-SCIE-0045
+     - Ground control software may be customized to efficiently prepare a mission raport based on the collected data
+     - This is to present a clear raport to jury.
+
+   * - REQ-SCIE-0046
+     - The rover should prevent shocks, vibrations caused by sample retriving activities to convey to the rover trunk
+     - Separation of torque/forces acting on the rover trunk make the rover trunk makes it more reliable so more scientific trials can be performed
