@@ -30,7 +30,7 @@ The document presents requirements in the following sections:
    * Mission-related requirements:
       * Scientific mission requirements
       * Maintenance mission requirements
-      * Terrain traversal requirements
+      * Collection traversal requirements
       * Autonomous traversal requirements
 
 
@@ -222,7 +222,7 @@ Group label definitions:
 [ARMM] Robotic arm maneuverability requirements
 --------------------------------------------------------------------------------
 
-.. list-table:: General rover requirements
+.. list-table:: Robotic arm maneuverability requirements
    :header-rows: 1
 
    * - ID
@@ -232,6 +232,105 @@ Group label definitions:
 
 Mission-related requirements:
 --------------------------------------------------------------------------------
+
+[MNTC] Maintenance mission requirements
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. list-table:: Maintenance mission requirements
+   :header-rows: 1
+
+   * - ID
+     - Requirement
+     - Description
+
+   * - REQ-MNTC-0010
+     - The rover shall be able to perform maintenance tasks
+     - Definition of the mission
+
+   * - REQ-MNTC-0011
+     - The rover shall be able to a state of a switch
+     - Switches are industrial grades
+
+   * - REQ-MNTC-0011
+     - The rover shall be able to rotate a knob
+     - Knobs set values presented/displayed in a display nearby (no further than 15cm from the knob)
+
+   * - REQ-MNTC-0012
+     - The rover shall be plug a high power plug IEC 60309
+     - One of the possible task to be performed on Mars
+
+   * - REQ-MNTC-0013
+     - The rover shall be able to probe voltage
+     - Voltage is expected to be in range of 1.0VDC to 24.0VDC
+
+   * - REQ-MNTC-0014
+     - Voltage measurement accuracy shall be no greater than 0.5V DC
+     - Measurement should not exceed 5% of tolerance
+
+   * - REQ-MNTC-0020
+     - The rover shall be able to access switches/buttons/knobs that are installed in any position
+     - Final position of an item is unknown
+
+   * - REQ-MNTC-0021
+     - The rovel shall be able to operate on control items located in range [.2; 1.5]m above the ground level
+     - General requirement
+
+   * - REQ-MNTC-0030
+     - The rover shall be able to detach protection lids/covers.
+     - Some of the items that control maintenance panel can be covered
+
+   * - REQ-MNTC-0030
+     - The rover shall automate some of the tasks
+     - The rover is a tool to be used by an astronaut. It should allow performing tasks with the least required astronaut's attention. Thus, automatization is expected.
+
+   * - REQ-MNTC-0031
+     - The rover should automatically retract the arm to the 'ready' position
+     - This is relieve an astronaut of simple, tiring tasks
+
+   * - REQ-MNTC-0032
+     - The rover should automatically retract the arm to the 'transport' position
+     - This is relieve an astronaut of simple, tiring tasks
+
+   * - REQ-MNTC-0040
+     - The rover shall provide augmented reality features
+     - .
+
+   * - REQ-MNTC-0041
+     - The rover shall recognize elements found in the maintenance panel
+     - It is a part of the augmented reality
+
+   * - REQ-MNTC-0042
+     - The rover shall suggest actions based on the detected features (buttons/switches/knobs...)
+     - It is a part of the augmented reality
+
+   * - REQ-MNTC-0043
+     - The rover should automaticaly perform switching action
+     - The rover is expected to change a state of a switch
+
+   * - REQ-MNTC-0044
+     - The rover should automatically press a button
+     - As stated
+
+   * - REQ-MNTC-0045
+     - The rover should provide spacial awareness information
+     - The rover should send distance data to the nearest obstacle on the movement path of the robotic arm
+
+   * - REQ-MNTC-0045
+     - The rover should track elements visible in the panel
+     - This is to keep attention to the most important items in FOV
+
+   * - REQ-MNTC-0050
+     - The rover shall provide feedback information such as forces exerted on the robotic arm
+     - This is to assure the rover does not destroy any equipment
+
+   * - REQ-MNTC-0060
+     - The rover shall use an adequate set of tools to perform each of the task
+     - This is to assure the rover does not destroy any equipment and to perform the action robustly
+
+   * - REQ-MNTC-0070
+     - The HMI shall be ergonomic, user-friendly 
+     - User experience is a part that facilitates any operation action. Well designed HMI reduced operator's training time
+
 
 [SCIE] Scientific mission requirements
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
