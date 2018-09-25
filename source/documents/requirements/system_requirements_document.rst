@@ -26,10 +26,12 @@ The document presents requirements in the following sections:
    * Teleoperations and telemetry requirements
    * General rover requirements
    * Robotic arm maneuverability requirements
-   * Scientific mission requirements
-   * Terrain traversal requirements
-   * Autonomous traversal requirements
    * Power consumption requirements
+   * Mission-related requirements:
+      * Scientific mission requirements
+      * Maintenance mission requirements
+      * Terrain traversal requirements
+      * Autonomous traversal requirements
 
 
 Acronyms
@@ -227,8 +229,12 @@ Group label definitions:
      - Requirement
      - Description
 
-[SCIE] Scientific mission requirements
+
+Mission-related requirements:
 --------------------------------------------------------------------------------
+
+[SCIE] Scientific mission requirements
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. list-table:: Scientific mission requirements
    :header-rows: 1
