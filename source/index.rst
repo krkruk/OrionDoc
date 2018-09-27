@@ -11,11 +11,5 @@ Welcome to Orion Project's documentation!
    :caption: Table of Contents
 
    documents/requirements/system_requirements_document
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   documents/proposal/proposal
+   documents/minutes_of_meeting/minutes_of_meeting

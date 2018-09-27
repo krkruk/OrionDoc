@@ -520,3 +520,7 @@ The mission assumes the rover serves as a Simple Fetching Rover (SFR). The rover
      - This is to automate simple tasks and relieve an astronaut/operator in tele-operation
 
 
+Integration, verification and other requirements
+================================================================================
+
+
