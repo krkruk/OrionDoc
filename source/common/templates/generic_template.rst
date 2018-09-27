@@ -18,14 +18,14 @@ Scope of the document
 
 
 Acronyms
-================================================================================
+--------------------------------------------------------------------------------
 
 .. A list of acronyms. If you have to add a new one, please add it into the included table
 
 .. include:: /common/acronyms/acronyms_table.rst
 
 Terms and definitions
-================================================================================
+--------------------------------------------------------------------------------
 
 .. A list of terms that require explanation to the reader.
 
@@ -37,7 +37,7 @@ Applicable documents
 .. A list of applicable documents to be placed as a reference to the project.
    For some of the documents this part is non-mandatory.
 
-.. list-table:: Terms and definitions
+.. list-table:: Applicable documents
    :header-rows: 1
 
    * - Reference ID

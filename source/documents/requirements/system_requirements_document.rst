@@ -30,23 +30,37 @@ The document presents requirements in the following sections:
    * Mission-related requirements:
       * Scientific mission requirements
       * Maintenance mission requirements
-      * Collection traversal requirements
+      * Collection mission requirements
       * Autonomous traversal requirements
 
 
 Acronyms
-================================================================================
+--------------------------------------------------------------------------------
 
 .. A list of acronyms. If you have to add a new one, please add it into the included table
 
 .. include:: /common/acronyms/acronyms_table.rst
 
 Terms and definitions
-================================================================================
+--------------------------------------------------------------------------------
 
 .. A list of terms that require explanation to the reader.
 
 .. include:: /common/terms/terms_table.rst
+
+Applicable documents
+================================================================================
+
+.. list-table:: Applicable documents
+   :header-rows: 1
+
+   * - Reference ID
+     - Title
+     - Short document description
+
+   * - [ERC-2018]
+     - European Rover Challenge 2018 - STUDENT Rules
+     - Rules and formula of ERC2018
 
 
 Requirements
@@ -233,104 +247,6 @@ Group label definitions:
 Mission-related requirements:
 --------------------------------------------------------------------------------
 
-[MNTC] Maintenance mission requirements
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-.. list-table:: Maintenance mission requirements
-   :header-rows: 1
-
-   * - ID
-     - Requirement
-     - Description
-
-   * - REQ-MNTC-0010
-     - The rover shall be able to perform maintenance tasks
-     - Definition of the mission
-
-   * - REQ-MNTC-0011
-     - The rover shall be able to a state of a switch
-     - Switches are industrial grades
-
-   * - REQ-MNTC-0011
-     - The rover shall be able to rotate a knob
-     - Knobs set values presented/displayed in a display nearby (no further than 15cm from the knob)
-
-   * - REQ-MNTC-0012
-     - The rover shall be plug a high power plug IEC 60309
-     - One of the possible task to be performed on Mars
-
-   * - REQ-MNTC-0013
-     - The rover shall be able to probe voltage
-     - Voltage is expected to be in range of 1.0VDC to 24.0VDC
-
-   * - REQ-MNTC-0014
-     - Voltage measurement accuracy shall be no greater than 0.5V DC
-     - Measurement should not exceed 5% of tolerance
-
-   * - REQ-MNTC-0020
-     - The rover shall be able to access switches/buttons/knobs that are installed in any position
-     - Final position of an item is unknown
-
-   * - REQ-MNTC-0021
-     - The rovel shall be able to operate on control items located in range [.2; 1.5]m above the ground level
-     - General requirement
-
-   * - REQ-MNTC-0030
-     - The rover shall be able to detach protection lids/covers.
-     - Some of the items that control maintenance panel can be covered
-
-   * - REQ-MNTC-0030
-     - The rover shall automate some of the tasks
-     - The rover is a tool to be used by an astronaut. It should allow performing tasks with the least required astronaut's attention. Thus, automatization is expected.
-
-   * - REQ-MNTC-0031
-     - The rover should automatically retract the arm to the 'ready' position
-     - This is relieve an astronaut of simple, tiring tasks
-
-   * - REQ-MNTC-0032
-     - The rover should automatically retract the arm to the 'transport' position
-     - This is relieve an astronaut of simple, tiring tasks
-
-   * - REQ-MNTC-0040
-     - The rover shall provide augmented reality features
-     - .
-
-   * - REQ-MNTC-0041
-     - The rover shall recognize elements found in the maintenance panel
-     - It is a part of the augmented reality
-
-   * - REQ-MNTC-0042
-     - The rover shall suggest actions based on the detected features (buttons/switches/knobs...)
-     - It is a part of the augmented reality
-
-   * - REQ-MNTC-0043
-     - The rover should automaticaly perform switching action
-     - The rover is expected to change a state of a switch
-
-   * - REQ-MNTC-0044
-     - The rover should automatically press a button
-     - As stated
-
-   * - REQ-MNTC-0045
-     - The rover should provide spacial awareness information
-     - The rover should send distance data to the nearest obstacle on the movement path of the robotic arm
-
-   * - REQ-MNTC-0045
-     - The rover should track elements visible in the panel
-     - This is to keep attention to the most important items in FOV
-
-   * - REQ-MNTC-0050
-     - The rover shall provide feedback information such as forces exerted on the robotic arm
-     - This is to assure the rover does not destroy any equipment
-
-   * - REQ-MNTC-0060
-     - The rover shall use an adequate set of tools to perform each of the task
-     - This is to assure the rover does not destroy any equipment and to perform the action robustly
-
-   * - REQ-MNTC-0070
-     - The HMI shall be ergonomic, user-friendly 
-     - User experience is a part that facilitates any operation action. Well designed HMI reduced operator's training time
-
 
 [SCIE] Scientific mission requirements
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -437,3 +353,170 @@ Mission-related requirements:
    * - REQ-SCIE-0046
      - The rover should prevent shocks, vibrations caused by sample retriving activities to convey to the rover trunk
      - Separation of torque/forces acting on the rover trunk make the rover trunk makes it more reliable so more scientific trials can be performed
+
+
+[MNTC] Maintenance mission requirements
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. list-table:: Maintenance mission requirements
+   :header-rows: 1
+
+   * - ID
+     - Requirement
+     - Description
+
+   * - REQ-MNTC-0010
+     - The rover shall be able to perform maintenance tasks
+     - Definition of the mission
+
+   * - REQ-MNTC-0011
+     - The rover shall be able to a state of a switch
+     - Switches are industrial grades
+
+   * - REQ-MNTC-0011
+     - The rover shall be able to rotate a knob
+     - Knobs set values presented/displayed in a display nearby (no further than 15cm from the knob)
+
+   * - REQ-MNTC-0012
+     - The rover shall be plug a high power plug IEC 60309
+     - One of the possible task to be performed on Mars
+
+   * - REQ-MNTC-0013
+     - The rover shall be able to probe voltage
+     - Voltage is expected to be in range of 1.0VDC to 24.0VDC
+
+   * - REQ-MNTC-0014
+     - Voltage measurement accuracy shall be no greater than 0.5V DC
+     - Measurement should not exceed 5% of tolerance
+
+   * - REQ-MNTC-0020
+     - The rover shall be able to access switches/buttons/knobs that are installed in any position
+     - Final position of an item is unknown
+
+   * - REQ-MNTC-0021
+     - The rovel shall be able to operate on control items located in range [.2; 1.5]m above the ground level
+     - General requirement
+
+   * - REQ-MNTC-0030
+     - The rover shall be able to detach protection lids/covers.
+     - Some of the items that control maintenance panel can be covered
+
+   * - REQ-MNTC-0030
+     - The rover shall automate some of the tasks
+     - The rover is a tool to be used by an astronaut. It should allow performing tasks with the least required astronaut's attention. Thus, automatization is expected.
+
+   * - REQ-MNTC-0031
+     - The rover should automatically retract the arm to the 'ready' position
+     - This is relieve an astronaut of simple, tiring tasks
+
+   * - REQ-MNTC-0032
+     - The rover should automatically retract the arm to the 'transport' position
+     - This is relieve an astronaut of simple, tiring tasks
+
+   * - REQ-MNTC-0040
+     - The rover shall provide augmented reality features
+     - .
+
+   * - REQ-MNTC-0041
+     - The rover shall recognize elements found in the maintenance panel
+     - It is a part of the augmented reality
+
+   * - REQ-MNTC-0042
+     - The rover shall suggest actions based on the detected features (buttons/switches/knobs...)
+     - It is a part of the augmented reality
+
+   * - REQ-MNTC-0043
+     - The rover should automaticaly perform switching action
+     - The rover is expected to change a state of a switch
+
+   * - REQ-MNTC-0044
+     - The rover should automatically press a button
+     - As stated
+
+   * - REQ-MNTC-0045
+     - The rover should provide spacial awareness information
+     - The rover should send distance data to the nearest obstacle on the movement path of the robotic arm
+
+   * - REQ-MNTC-0045
+     - The rover should track elements visible in the panel
+     - This is to keep attention to the most important items in FOV
+
+   * - REQ-MNTC-0050
+     - The rover shall provide feedback information such as forces exerted on the robotic arm
+     - This is to assure the rover does not destroy any equipment
+
+   * - REQ-MNTC-0060
+     - The rover shall use an adequate set of tools to perform each of the task
+     - This is to assure the rover does not destroy any equipment and to perform the action robustly
+
+   * - REQ-MNTC-0070
+     - The HMI shall be ergonomic, user-friendly 
+     - User experience is a part that facilitates any operation action. Well designed HMI reduced operator's training time
+
+
+[COLL] Collection mission requirements
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+The mission assumes the rover serves as a Simple Fetching Rover (SFR). The rover is meant to collect an object, e.g. a box with a speciment, and automatically deliver the cargo to the ground control. Since time on Mars is precious, special emphasis is put on task automation.
+
+
+.. list-table:: Maintenance mission requirements
+   :header-rows: 1
+
+   * - ID
+     - Requirement
+     - Description
+
+   * - REQ-COLL-0010
+     - A rover shall be equipped with a manipulator or other manipulator devices capable of catching, holding, stashing an cache object
+     - For more details of the robotic arm requirements please refer to `[ARMM] Robotic arm maneuverability requirements`_
+
+   * - REQ-COLL-0011
+     - The rover shall be retrieve the object that can be partially covered with soild or buried
+     - This is to simulate Mars weather that may cover any object in dust/soil
+
+   * - REQ-COLL-0020
+     - The rover shall be capable of reaching a destination where the object is located
+     - For more details of the robotic platform please refer to `[GNRL] General rover requirements`_
+
+   * - REQ-COLL-0030
+     - The rover shall be equipped with a container capable of storing a predefined cache object
+     - The purpose of the container is prevent the cache object from damage
+
+   * - REQ-COLL-0031
+     - The rover shall be equipped with at least 4 cache containers
+     - This is required to complete the task (3 object to be cached) + 1 extra slot as a backup
+
+   * - REQ-COLL-0032
+     - The container should keep a cache object vertically
+     - General rule
+
+   * - REQ-COLL-0033
+     - The container shall immobilize a cache object
+     - This is to keep the object safe
+
+   * - REQ-COLL-0034
+     - The container shall be able to store a cylinder as described in the [ERC-2018]
+     - General rule
+
+   * - REQ-COLL-0035
+     - The design of the container should be focused on facilitation if the object insertion
+     - This is to reduce a risk of loosing and/or destroying the object when placing in the container
+
+   * - REQ-COLL-0040
+     - The rover should provide some task automation
+     - This is to provide robust performance of the rover
+
+   * - REQ-COLL-0041
+     - The rover should automatically detect the cache object
+     - This is a part of rover's augmented reality to relieve an astronaut in tele-operation
+
+   * - REQ-COLL-0042
+     - The rover should automatically approach the cache object
+     - This is to automate simple tasks and relieve an astronaut/operator in tele-operation
+
+   * - REQ-COLL-0043
+     - The rover should automatically pick up the cache object
+     - This is to automate simple tasks and relieve an astronaut/operator in tele-operation
+
+

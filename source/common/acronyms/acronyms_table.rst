@@ -20,3 +20,7 @@
    * - SW
      - Software
      - A set of commands to be executed on a computer, expressed in a human-readable format
+
+   * - SFR
+     - Simple Fetching Rover
+     - A type of a Mars rover that supposed to quickly transport an object, e.g. a boxed specimen, to the ground control
