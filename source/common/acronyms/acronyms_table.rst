@@ -5,9 +5,17 @@
      - Full form
      - Description
 
+   * - AR
+     - Acceptance Review
+     - A phase in which the product is verified on customer's infrastructure
+
    * - COTS
      - Commercial, Off-The-Shelf
      - A product that can be purchased/obtained freely in the market and utilized in a project
+
+   * - CDR
+     - Critical Design Review
+     - A development phase in which the project is reviewed critically, ideally by the external entity. It is to check compilance with requirements and test a so-far developed device.
 
    * - FOV
      - Field of View

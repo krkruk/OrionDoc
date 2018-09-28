@@ -90,6 +90,39 @@ Feasibilty study and integration plan
 Schedule and deliveries
 --------------------------------------------------------------------------------
 
+.. list-table:: Schedule
+   :header-rows: 1
+
+   * - Milestone ID
+     - Name
+     - Time
+     - Description
+
+   * - SCH-MLST-0010
+     - Milestone 1: Chassis
+     - :math:`T_0` + 2 months
+     - By the end of the milestone the rover shall move freely and reliably as a remotely controlled vehicle. Software shall be capable of registering logs, including power consumption and angular velocities of each wheels. A preliminary PID controller for each wheel shall be implemented.
+     
+   * - SCH-MLST-0020
+     - Milestone 2: Manipulator
+     - :math:`T_0` + 4 months
+     - The rover shall be equipped with a fully functional manipulator, capable of grasping objects and operate safely and reliably. The ground control shall retrieve feedback data such as position of each of robotic arm segments, crushing strength of the gripper. A basic automation, e.g. deploying an arm into an initial operation position, shall be implemented.
+
+   * - SCH-MLST-0030
+     - Milestone 3: Science, collection, maintenance tasks
+     - :math:`T_0` + 6 months
+     - The rover shall be able to store speciment samples and perform basic scientific trials. The rover shall be also to collect a cache object fulfiling the requirements. The rover shall be able to all defined 3 tasks with a user intervention. Rover automation shall be improved to the degree some manipulation operations will be done automatically such as approaching to an object. The rover shall be able to recognize, categorize and label basic maintenance-related objects.
+
+   * - SCH-MLST-0040
+     - Milestone 3: Autonomy task
+     - :math:`T_0` + 8 months
+     - The rover shall be able to traverse the terrain in a semi-autonomous manner. Path routing and hazard categorization based on simple conditions shall be implemented. The rover shall traverse automatically a designated path, without obstacle finding abilities. The Team shall have a solid basis and undestanding in using IMU and VO to further improve autonomy.
+
+   * - SCH-MLST-0050
+     - Milestone 3: Autonomy task
+     - :math:`T_0` + 11 months
+     - The rover shall be a well equipped robotic platform capable of performing several geological task, help an astronaut, collect cache objects and traverse terrain in at least semi-automated manner. All tests defined in VTP shall be successfully completed.
+
 
 .. list-table:: List of deliverables
    :header-rows: 1
@@ -100,7 +133,7 @@ Schedule and deliveries
      - Delivery date
      - Notes
 
-   * - PRP
+   * - PROP
      - Document
      - Proposal
      - Initial submission
@@ -123,6 +156,18 @@ Schedule and deliveries
      - Final Report
      - T - 2months
      - Final part of Team's admission process
+
+   * - VTP
+     - Document
+     - Verification Test Procedure
+     - Along with FREP
+     - A set of test descriptions.
+
+   * - TPR
+     - Document
+     - Test Procedure Report
+     - Along with FREP
+     - Final results of tests defined in VTP
 
 
 Technical and non-technical risks
@@ -147,6 +192,8 @@ Background
 
 .. Information about past projects and experience in rover development
    Results in past ERCs
+
+Orion Team participated in European Rover Challenge twice.
 
 Project Organization
 --------------------------------------------------------------------------------
@@ -186,3 +233,45 @@ Key Personnel
 Time And Financial Costs Proposal
 ================================================================================
 
+.. Time assumption is just a guess for this moment. Please just update it.
+
+.. list-table:: Time costs
+   :header-rows: 1
+
+   * - REQ-ID
+     - Task description
+     - Time estimation (hours)
+
+   * - CST-TIME-0010
+     - Preparation of documentation
+     - 120 (24h per document)
+
+   * - CST-TIME-0020
+     - Preparation of CDRV
+     - 30 (shooting + editting, 3 working days)
+
+.. list-table:: Financial estimation
+   :header-rows: 1
+
+   * - ID
+     - Item name
+     - Category
+     - Price estimation in Euro (:math:`{\pm\sigma}`)
+
+   * - CST-EURO-0010
+     - Aluminum and welding
+     - Structure components
+     - 250 :math:`{\pm}` 50
+
+   * - CST-EURO-0020
+     - Motors and transmission
+     - Propulsion
+     - 300 :math:`{\pm}` 50
+
+
+Project Commercialization
+================================================================================
+
+.. Use of COTS such as Arduinos and Raspberry Pi-s allows reducing overall prices of the robot
+   Cheap robots can be considered as a disposable device just like medicine treats most of the sugical tools
+   Thus, providing a cheap solution, as our rover, can be considered a great pros for the market. Moreover, free and *libre* software we developed can used by anyone who wants. This may not result in a pile of money but may end up with a kick to other projects.

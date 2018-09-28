@@ -21,7 +21,7 @@ The meeting is summoned to discuss the following issues:
    #. `Introduction to past Orion projects`_
    #. `Lessons learned`_
    #. `Rover: Orion next gen`_
-      
+   #. `Shopping`      
 
 
 
@@ -164,3 +164,8 @@ Wireless communication
 Wifi 2.4GHz
 
 Consider moving to 5GHz WiFi
+
+Shopping
+--------------------------------------------------------------------------------
+
+What to buy to accomplish first milestone
