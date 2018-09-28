@@ -177,7 +177,7 @@ Key Personnel
 
    * - Krzysztof K.
      - Project Manager, Sofware Developer
-     - Veteran of ERC (2 times), Bachelor of Biomedical Engineering, employed as a software developer in space industry
+     - Veteran of ERC (2 times), Bachelor of Biomedical Engineering, employed as a software developer in space industry, division of Payload Data Processing
 
    * - Wojeciech O.
      - Vice Project Manager, Software Developer

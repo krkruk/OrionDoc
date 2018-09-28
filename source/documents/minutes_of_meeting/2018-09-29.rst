@@ -60,7 +60,107 @@ Introduction to past Orion projects
 Lessons learned
 --------------------------------------------------------------------------------
 
-Test more
+* Design phase
+* Hierarchy of tasks
+* Happy daydreaming
+* Test more
 
 Rover: Orion next gen
 -------------------------------------------------------------------------------
+
+Chassis
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Current state:
+   #. Mechanics
+   #. Electronics
+   #. Software
+
+Expected results in the nearest future:
+   #. Mechanics
+   #. Electronics
+   #. Software
+
+Final results:
+   #. Mechanics
+   #. Electronics
+   #. Software
+
+Manipulator
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Current state:
+   #. Mechanics
+         * Encoder mounting points
+         * Degrees of freedom
+   #. Electronics
+   #. Software
+
+Expected results in the nearest future:
+   #. Mechanics
+   #. Electronics
+   #. Software
+
+Final results:
+   #. Mechanics
+   #. Electronics
+   #. Software
+
+
+Science task & containers
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Current state:
+   #. Mechanics:
+         * Containers
+         * Drilling
+         * Sealing
+         * Microscopes
+         * Other
+   #. Electronics
+   #. Software
+
+Expected results in the nearest future:
+   #. Mechanics
+   #. Electronics
+   #. Software
+
+Final results:
+   #. Mechanics
+   #. Electronics
+   #. Software
+
+
+High level software design and implementation
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Current state:
+   * Basic software written in Qt
+
+Discussed design:
+   * gRPC
+   * Boost
+   * Qt only for ground control software and UI
+
+uC - on-board computer communication:
+   * providing low level API
+   * power control / angular velocity control
+   * UART or something else? 
+
+C++:
+   * CMake
+   * Git
+
+python:
+   * good for prototyping
+   * good for providing microservices type-like services
+   * not very good for quasi-realtime systems
+
+Java - not permitted, period. No question ask.
+
+Wireless communication
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Wifi 2.4GHz
+
+Consider moving to 5GHz WiFi
