@@ -1,7 +1,7 @@
 # ignore build directory
-
 build
 
 # ignore text editor
 .vscode
 
+.doctrees

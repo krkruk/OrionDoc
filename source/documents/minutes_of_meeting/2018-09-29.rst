@@ -17,12 +17,50 @@ Agenda
 
 The meeting is summoned to discuss the following issues:
 
-   #. `Issue 1`_
+   #. `Human resources and organization`_
+   #. `Introduction to past Orion projects`_
+   #. `Lessons learned`_
+   #. `Rover: Orion next gen`_
+      
 
 
 
 Agreements, declarations, actions...
 ================================================================================
 
-Issue 1
+
+Human resources and organization
 --------------------------------------------------------------------------------
+
+   #. Supervisor: Marcin M.
+         A supervisor liaises between the Team and the University. His job is to keep the project rolling in terms of financial and logistics support. He also acts as a consultant in technical problems.
+   #. Project Manager: Krzysztof K.
+         A project manager is responsible for development of documentation, contact with ERC organizers. He mantains the project and assures all milestones are met. He also acts as a consultant in technical problems. 
+   #. Vice project Manager: Wojciech O.
+         A vice project manager has the same duties as the project manager. He serves as backup in case the project manager or supervisor cannot be present/participate in the project no longer.
+
+There are 5 fields related to the project that have to be covered:
+
+   #. Accountance and Finance Division
+         This includes contact with sponsors and the University. Anyone who is assigned for this duty is obliged to keep expenses records and provide detail raports.
+   #. Management Division
+         Anyone who is assigned to management Division is obliged to 1) prepare thorough documentation, 2) prepare verification test procedures, 3) create raports after each offically held meeting.
+   #. Mechanical Division
+         Mechanics are to design and produce mechanical components that are recognized in the System Design Document. They are also obliged to deliver a documentation draft that can be reviewed and merged with official documentation.
+   #. Electronic Engineering Division
+         Each member of Electronic Engineering Division shall design, manufacture, test and deploy electronic components that are required in the project. They are obliged to deliver a documentation draft that includes circuits designs and description of how each of the circuits work. They must also provide firmware for any hardware that is powered by microcontrollers and share API. To correctly design any circuit, espeially power circuit, they must stricly cooperate with Mechanical Division in order to align power requirements.
+   #. Software Division
+         People embraced in that division are obliged to create and test on-board computer software as well as ground control one. In order to facilitate the progress they must be aware of project assumtion in order to start software development at the very early stage of the robotic venture.
+
+
+Introduction to past Orion projects
+--------------------------------------------------------------------------------
+
+
+Lessons learned
+--------------------------------------------------------------------------------
+
+Test more
+
+Rover: Orion next gen
+-------------------------------------------------------------------------------
