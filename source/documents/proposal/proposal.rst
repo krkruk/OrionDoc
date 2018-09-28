@@ -51,17 +51,72 @@ Applicable documents
      - European Rover Challenge 2018 - STUDENT Rules
      - Rules and formula of ERC2018
 
-
-Analysis of the requirements
+Technical proposal
 ================================================================================
 
-.. Content and chapters here...
+
+Analysis of the requirements
+--------------------------------------------------------------------------------
+
+
+.. list-table:: Compilance matrix
+   :header-rows: 1
+
+   * - REQ-ID
+     - Requirement Title
+     - Verification
+     - Comment
 
 
 Proposed solution
-================================================================================
+--------------------------------------------------------------------------------
 
-.. Content and chapters here...
+Feasibilty study
+--------------------------------------------------------------------------------
+
+Schedule
+--------------------------------------------------------------------------------
 
 Management proposal
 ================================================================================
+
+Background
+--------------------------------------------------------------------------------
+
+.. Information about past projects and experience in rover development
+   Results in past ERCs
+
+Project Organization
+--------------------------------------------------------------------------------
+
+.. Present the primary management scheme in the project
+   And justify why it is worth letting us to attend the ERC even though the team
+   is quite small.
+
+.. Define project managment, how it is going to achieve milestones and reach the
+   final goal, which is to complete and participate in the ERC. Enumerate
+   several means how management is going to supervise the project
+
+
+Key Personnel
+--------------------------------------------------------------------------------
+
+
+.. list-table:: Key Personnel
+   :header-rows: 1
+
+   * - Name
+     - Function
+     - Experience
+
+   * - Marcin M.
+     - Supervisor, MacGyver
+     - Veteran of ERC (2 times), Master of Electronic Engineering, employed as a assistant professor at LUT
+
+   * - Krzysztof K.
+     - Project Manager, Sofware Developer
+     - Veteran of ERC (2 times), Bachelor of Biomedical Engineering, employed as a software developer in space industry
+
+   * - Wojeciech O.
+     - Vice Project Manager, Software Developer
+     - Veteran of ERC (1 time), a student of Software Engineering, interests in statically typed, compiled, programming languages
