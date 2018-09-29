@@ -298,6 +298,10 @@ Mission-related requirements:
      - The design of a container should be designed to keep real mission requirements in mind
      - The design shall correspond real mission requirements so the construction possibly can be reused in a Mars mission
 
+   * - REQ-SCIE-0026
+     - The rover shall be equipped with at least 4 specimen containers
+     - This is required to complete the task (3 superficial samples)) + 1 extra slot as a backup
+
    * - REQ-SCIE-0030
      - The rover shall retrieve a deep soil sample
      - The deep soil sample is a must to fully verify geological traits of Mars

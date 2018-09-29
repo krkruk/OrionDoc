@@ -38,6 +38,8 @@ Human resources and organization
          A project manager is responsible for development of documentation, contact with ERC organizers. He mantains the project and assures all milestones are met. He also acts as a consultant in technical problems. 
    #. Vice project Manager: Wojciech O.
          A vice project manager has the same duties as the project manager. He serves as backup in case the project manager or supervisor cannot be present/participate in the project no longer.
+   #. Public Relations and Financial Issues: Patryk G.
+         Description here, nothing fancy
 
 There are 5 fields related to the project that have to be covered:
 
@@ -56,14 +58,40 @@ There are 5 fields related to the project that have to be covered:
 Introduction to past Orion projects
 --------------------------------------------------------------------------------
 
+4 tasks to be completed:
+   #. Maintenance task
+   #. Collection task
+   #. Science task
+   #. Autonomous traversal task
 
 Lessons learned
 --------------------------------------------------------------------------------
 
-* Design phase
-* Hierarchy of tasks
-* Happy daydreaming
-* Test more
+General:
+   #. There is never enough time
+   #. Keep it simple, stupid!
+   #. One thing at a time
+   #. Do not exaggerate too much in terms of the construction
+
+Mechanical:
+   #. CAD design and FEM
+   #. Simple calculations should be done by hand and registered in the document (provide a paper that describes those calculations)
+
+Design phase:
+   #. Totally free thinking is a good thing
+   #. Even the dumbest idea should be considered because finally it may not be as dumb as you can think of
+
+Happy daydreaming:
+   #. Do not exaggeragte
+   #. Do not WASTE much time on funny conversations
+
+Hierarchy of tasks:
+   #. Each assigned task should be completed by the end of a milestione
+   #. The progress can be greater than requirements set by the milestone. The milestone establishes the total minimum to be accepted as passing
+         
+Test more:
+   #. Each major feature MUST be tested
+   #. Each test must be written down and the passing criteria explicitly established
 
 Rover: Orion next gen
 -------------------------------------------------------------------------------
@@ -73,28 +101,49 @@ Chassis
 
 Current state:
    #. Mechanics
+         The chassis is not going to change much. 4 DC motors, + encoders.
    #. Electronics
+         * COTS H-bridges have been purchased. Moreover, a standard relay-based H-bridge has been designed and is ready to be manufactured. Low-level software to be created at Lublin R&D center once the driver come.
+         * A case for all on-board electronics shall be a carry-on case
    #. Software
+         We have software written in Qt
 
-Expected results in the nearest future:
+Expected results in the nearest future for "Milestone 1":
    #. Mechanics
+         * Provide boxes/containers to protect H-bridges
    #. Electronics
+         * Provide full power wireing
+         * Install H-Bridges
+         * Install encoders
+         * Develop software for wheel-drivers
    #. Software
+         * gRPC basic - direct control
+         * ClientApp: Electron, WebHook
 
 Final results:
    #. Mechanics
    #. Electronics
    #. Software
 
+**To be delivered**:
+   * Name of the purchased H-Bridges for documentation purposes
+
 Manipulator
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Current state:
    #. Mechanics
-         * Encoder mounting points
-         * Degrees of freedom
+         * The gripper has been design and produced. It works!
+         * 'Aviomarin' module is also complete
+         * A concept of the arm has been developed and scheduled for CAD.
+            Chain-sprocket design
+         * The manipulator shall have 7 degrees of freedom
    #. Electronics
+         * The gripper has been already coded (atmega). The API to be shared.
+         * All H-Bridges have been purchased
+         * New high-power relay-based drivers are to be designed
    #. Software
+         * See Chassis requirements
 
 Expected results in the nearest future:
    #. Mechanics
@@ -113,16 +162,25 @@ Science task & containers
 Current state:
    #. Mechanics:
          * Containers
+            Drawer like-containers, sealed, with electric motors to close it
+            
          * Drilling
+            PC tube, wiper motor
+         * Bełchatów module
+            To be done
          * Sealing
+            Rubber window seals
          * Microscopes
+            Purchased several microscopes
          * Other
    #. Electronics
+
    #. Software
 
 Expected results in the nearest future:
    #. Mechanics
    #. Electronics
+         * Check whether microscopes can work with RPi
    #. Software
 
 Final results:
@@ -140,7 +198,7 @@ Current state:
 Discussed design:
    * gRPC
    * Boost
-   * Qt only for ground control software and UI
+   * Qt only for ground control software and UI: decided to use Electron so it is multiplatform
 
 uC - on-board computer communication:
    * providing low level API
@@ -156,6 +214,8 @@ python:
    * good for providing microservices type-like services
    * not very good for quasi-realtime systems
 
+Any other languages are permited for simple microservice-like services. The language must be compiled to binary code.
+
 Java - not permitted, period. No question ask.
 
 Wireless communication
@@ -163,9 +223,11 @@ Wireless communication
 
 Wifi 2.4GHz
 
-Consider moving to 5GHz WiFi
+Consider moving to 5GHz WiFi: to be tested, we have a point-to-point solution
 
 Shopping
 --------------------------------------------------------------------------------
 
-What to buy to accomplish first milestone
+* A pink case
+* 2x Arduino Mega
+* Streaming module found in banggood
