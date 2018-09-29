@@ -231,3 +231,14 @@ Shopping
 * A pink case
 * 2x Arduino Mega
 * Streaming module found in banggood
+
+TODO
+--------------------------------------------------------------------------------
+
+* Dissassemble manipulator cabling
+* Dissassemble manipulator
+* Design and print a case for manipulator gear-motors of the wrist + encoders (potentiometers0
+* Develop a linking element between a PVC pipe and a worm drive
+* Develop a manipulator trass
+* Analyze and suggest an overall design of a Falcon Milennium controller (Marcin's fancy joystick)
+* Develop an early design of Bełhatów module
