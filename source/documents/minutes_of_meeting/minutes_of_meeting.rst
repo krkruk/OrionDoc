@@ -8,3 +8,4 @@ Minutes of Meeting
    :caption: List of Minutes of Meeting
 
    2018-09-29 <2018-09-29>
+   2019-02-16 <2019-02-16>

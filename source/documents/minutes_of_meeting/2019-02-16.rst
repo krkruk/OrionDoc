@@ -1,0 +1,189 @@
+.. This is a template for the Minutes of Meeting document that should be created during each offical meeting
+
+--------------------------------------------------------------------------------
+Minutes of Meeting
+--------------------------------------------------------------------------------
+
++------------------------+-----------------------------------------------------+
+| Date:                  | 2019-02-16                                          |
++------------------------+-----------------------------------------------------+
+| Project:               | Orion Project                                       |
++------------------------+-----------------------------------------------------+
+| Place:                 | Lublin HQ, Nadbystrzycka                            |
++------------------------+-----------------------------------------------------+
+| Prepared by:           | Krzysztof K.                                        |
++------------------------+-----------------------------------------------------+
+
+Agenda
+================================================================================
+
+The meeting is summoned to discuss the following issues:
+
+   #. `Human resources and organization`_
+   #. `Chassis`_
+   #. `Manipulator`_
+   #. `Science task & containers`_
+   #. `High level software design and implementation`_
+   #. `Wireless communication`_
+   #. `Shopping and trip`_
+
+
+Agreements, declarations, actions...
+================================================================================
+
+
+Human resources and organization
+--------------------------------------------------------------------------------
+
+Some changes have been introduced. The most important is a change of a Project Manager. Wojciech O. now is responsible for running the project and Krzysztof K. is only to help him in critical situation. The change has been introduced due to Krzysztof's tight schedule (master degree, full time work and in the mean time the Rover).
+
+The good news is Marcin has finally completed his PhD and has plenty of free time to build the rover.
+
+   #. Supervisor: Marcin M., PhD
+         A supervisor liaises between the Team and the University. His job is to keep the project rolling in terms of financial and logistics support. He also acts as a consultant in technical problems.
+   #. Project Manager: Wojciech O.
+         A project manager is responsible for development of documentation, contact with ERC organizers. He mantains the project and assures all milestones are met.
+   #. Vice project Manager: Krzysztof K.
+         A vice project manager has the same duties as the project manager. He serves as backup in case the project manager or supervisor cannot be present/participate in the project no longer. He also acts as a consultant in technical problems. 
+   #. Public Relations and Financial Issues: Patryk G.
+         Description here, nothing fancy
+
+Bartek Sk. is responsible for development of the documentation for ERC from now on. He also should prepare an approximation of the rover budget.
+
+Chassis
+--------------------------------------------------------------------------------
+
+Current state:
+   #. Mechanics
+         * New encoders has been purchased.
+         * We have been given a new rack/box in which we are going to place all on-board electronic devices.
+   #. Electronics
+         * A new custom made driver has been built
+         * To be tested
+   #. Software
+         * Krzysztof K. is to write new software as a project for "Advanced C++" class at Politechnika Warszawska. It is going to be based on gRPC and boost.
+
+Expected results in the nearest future for "Milestone 1":
+   #. Mechanics
+         * Install boxes/containers to protect H-bridges
+         * Marcin M. to provide CAD drawings
+   #. Electronics
+         * Provide full power wireing
+         * Install H-Bridges
+         * Install encoders
+         * Develop software for wheel-drivers
+         * Launch IMU on Raspberry Pi
+         * Install whiskers in the chassis (an obstacle detector) and connect them to H-bridge driver
+         * Document driver pinouts
+         * Document driver API
+   #. Software
+         * gRPC basic - direct control
+         * ClientApp: basic shitty Qt app
+
+TEST IT!!!
+
+Manipulator
+--------------------------------------------------------------------------------
+
+Current state:
+   #. Mechanics
+         * The gripper has been finished. It passed an egg test. Gripper tips
+           can be changed.
+         * Liposuction/metalsuction procedure undergoing: so far total mass has been reduced from 22kg to 12.5kg
+   #. Electronics
+         * We are going to use our old actuators
+         * The actuators are boosted to 50VDC so they work quickly :)
+   #. Software
+         * See Chassis requirements
+         * Gripper: implemented gripper power and gripping angle limits
+
+Expected results in the nearest future for "Milestone 1":
+   #. Mechanics:
+         * Install manipulator, gripper
+         * Install encoders
+   #. Electronics:
+         * Create power drivers
+         * Document driver pinouts
+         * Document aviomarin module
+         * Create gripper drawings
+   #. Software:
+         * Test software: see: `High level software design and implementation`_
+         * Final software to be written as software found in the chassis
+
+Science task & containers
+--------------------------------------------------------------------------------
+
+Current state:
+   #. Mechanics:
+         * Containers
+            Drawer like-containers, sealed, with electric motors to close it
+         * Drilling
+            *MegaSRU - to be patented*
+         * Bełchatów module
+            To be done
+         * Microscopes
+            Purchased several microscopes
+         * Measuring pot (an object you keep flowers in, not weed...)
+            Install the pot and test it.
+   #. Electronics
+         * Provide API for the measuring pot.
+
+   #. Software
+
+**Measuring pot**:
+   * provide documentation
+   * justify why the pot is a good idea to perform scientific tasks. Justification must be reasonable
+   * explain how it works. Add a list of used sensors.
+   * gather an examplary data and provide some interpretation. This is to provide some basic point of view
+
+Expected results in the nearest future:
+   #. Mechanics
+   #. Electronics
+         * Check whether microscopes can work with RPi
+   #. Software
+
+
+High level software design and implementation
+--------------------------------------------------------------------------------
+
+Current state:
+   * Basic software written in Qt
+
+Chassis:
+   * software shall be rewritten to use gRPC and boost networking (serial port)
+
+Manipulator:
+   * Bartek Sk. is to prepare a very basic application to control manipulator:
+      * retrieve commands from a gamepad
+      * connect to a serial device (manipulator)
+      * send commands to the manipulator in JSON format
+      * document manipulator APi - consult with an electronics developer (probably, Marcin)
+      * retrieve feedback data and display it in reasonable form ("labels: value" pairs)
+   * The app shall be a temporary solution for CheckIT
+   * Can be implemented in C# but must work on Linux!
+
+Camera:
+   * implement a separate application that automatically takes pictures in a given time interval
+   * is to provide a photographic documentation of a task (especially scientific one)
+   * take pictures at least from Axis camera set
+   * Wojtek to assign someone for this task. Someone has already volunteered - chase him down and make him do so.
+
+
+Wireless communication
+--------------------------------------------------------------------------------
+
+* Wifi 2.4GHz - we keep 2.4GHz comm
+* Marcin M. to provide RF sensors.
+* Wojciech O. to use the sensor and test the wireless communication
+
+
+Shopping and trip
+--------------------------------------------------------------------------------
+
+* an emergency lamp (police lamp, yellow warning lamp)
+* a camera lens
+* 3 hoverboards for testing
+
+Trip:
+* Find a mansion to rent for ERC
+
