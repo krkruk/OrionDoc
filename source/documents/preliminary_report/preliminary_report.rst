@@ -62,6 +62,7 @@ Mechanics
 
 .. list-table:: General requirements
    :header-rows: 1
+   :widths: 33 67
 
    * - Abbreviation
      - Descrption
@@ -70,6 +71,7 @@ Mechanics
 
 .. list-table:: Chassis requirements
    :header-rows: 1
+   :widths: 33 67
 
    * - Abbreviation
      - Descrption
@@ -88,6 +90,7 @@ Mechanics
 
 .. list-table:: Manipulator requirements
    :header-rows: 1
+   :widths: 33 67
 
    * - Abbreviation
      - Descrption
