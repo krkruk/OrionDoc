@@ -71,6 +71,8 @@ Mechanics
 .. list-table:: Chassis requirements
    :header-rows: 1
 
+   * - Abbreviation
+     - Descrption
    * - REQ-MECH-CHAS-001
      - Driving on dry, loose surface (sand, gravel)
    * - REQ-MECH-CHAS-002
@@ -87,6 +89,8 @@ Mechanics
 .. list-table:: Manipulator requirements
    :header-rows: 1
 
+   * - Abbreviation
+     - Descrption
    * - REQ-MECH-MAN-001
      - Rock sample collection, with a minimum weight of 100g
    * - REQ-MECH-MAN-002
@@ -98,4 +102,4 @@ Mechanics
    * - REQ-MECH-MAN-005
      - Rotating knob to specific position
    * - REQ-MECH-MAN-006
-     - Measurement of force applied by grasper
+     - Measurement of force
