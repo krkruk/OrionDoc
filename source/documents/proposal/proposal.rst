@@ -82,7 +82,7 @@ Proposed solution
 --------------------------------------------------------------------------------
 
 
-Feasibilty study and integration plan
+Feasibility study and integration plan
 --------------------------------------------------------------------------------
 
 .. define how to accomplish tasks enumerated above. Moreover, present how the Team is going to integrate submodules into a single working system (propose CI, just like in software buisness)
@@ -111,7 +111,7 @@ Schedule and deliveries
    * - SCH-MLST-0030
      - Milestone 3: Science, collection, maintenance tasks
      - :math:`T_0` + 6 months
-     - The rover shall be able to store speciment samples and perform basic scientific trials. The rover shall be also to collect a cache object fulfiling the requirements. The rover shall be able to all defined 3 tasks with a user intervention. Rover automation shall be improved to the degree some manipulation operations will be done automatically such as approaching to an object. The rover shall be able to recognize, categorize and label basic maintenance-related objects.
+     - The rover shall be able to store specimens samples and perform basic scientific trials. The rover shall be also to collect a cache object fulfiling the requirements. The rover shall be able to all defined 3 tasks with a user intervention. Rover automation shall be improved to the degree some manipulation operations will be done automatically such as approaching to an object. The rover shall be able to recognize, categorize and label basic maintenance-related objects.
 
    * - SCH-MLST-0040
      - Milestone 3: Autonomy task
@@ -180,7 +180,7 @@ Technical and non-technical risks
    * - Risk ID
      - Description
      - Likelihood
-     - Severity/imact
+     - Severity/impact
      - Mitigation actions
 
 
@@ -202,7 +202,7 @@ Project Organization
    And justify why it is worth letting us to attend the ERC even though the team
    is quite small.
 
-.. Define project managment, how it is going to achieve milestones and reach the
+.. Define project management, how it is going to achieve milestones and reach the
    final goal, which is to complete and participate in the ERC. Enumerate
    several means how management is going to supervise the project
 
@@ -226,7 +226,7 @@ Key Personnel
      - Project Manager, Sofware Developer
      - Veteran of ERC (2 times), Bachelor of Biomedical Engineering, employed as a software developer in space industry, division of Payload Data Processing
 
-   * - Wojeciech O.
+   * - Wojciech O.
      - Vice Project Manager, Software Developer
      - Veteran of ERC (1 time), a student of Software Engineering, interests in statically typed, compiled, programming languages
 
@@ -248,7 +248,7 @@ Time And Financial Costs Proposal
 
    * - CST-TIME-0020
      - Preparation of CDRV
-     - 30 (shooting + editting, 3 working days)
+     - 30 (shooting + editing, 3 working days)
 
 .. list-table:: Financial estimation
    :header-rows: 1
@@ -272,6 +272,6 @@ Time And Financial Costs Proposal
 Project Commercialization
 ================================================================================
 
-.. Use of COTS such as Arduinos and Raspberry Pi-s allows reducing overall prices of the robot
+.. Use of COTS such as Arduino's and Raspberry Pi-s allows reducing overall prices of the robot
    Cheap robots can be considered as a disposable device just like medicine treats most of the sugical tools
    Thus, providing a cheap solution, as our rover, can be considered a great pros for the market. Moreover, free and *libre* software we developed can used by anyone who wants. This may not result in a pile of money but may end up with a kick to other projects.
