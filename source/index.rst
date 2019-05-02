@@ -14,3 +14,4 @@ Welcome to Orion Project's documentation!
    documents/proposal/proposal
    documents/verification/vtp
    documents/minutes_of_meeting/minutes_of_meeting
+   documents/preliminary_report/preliminary_report

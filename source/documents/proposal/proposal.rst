@@ -76,6 +76,10 @@ Analysis of the requirements
      - Requirement name
      - Description
      - Bidder's comment
+   * - Another REQ-D
+     - Another requiement name
+     - Another description
+     - Another bidder's comment
 
 
 Proposed solution
@@ -182,8 +186,12 @@ Technical and non-technical risks
      - Likelihood
      - Severity/impact
      - Mitigation actions
-
-
+   * - Another risk ID
+     - Another description
+     - Another likehood
+     - Another severity/impact
+     - Another mitigation actions
+     
 Management proposal
 ================================================================================
 

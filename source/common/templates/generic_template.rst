@@ -43,6 +43,9 @@ Applicable documents
    * - Reference ID
      - Title
      - Short document description
+   * - Another reference ID
+     - Another title
+     - Another short document description
 
 
 Section 1
