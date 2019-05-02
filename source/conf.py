@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Orion Project'
-copyright = '2017, Krzysztof Kruk'
+copyright = '2019, Krzysztof Kruk'
 author = 'Krzysztof Kruk'
 
 # The version info for the project you're documenting, acts as replacement for
