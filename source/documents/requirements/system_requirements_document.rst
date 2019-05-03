@@ -237,14 +237,11 @@ Group label definitions:
 --------------------------------------------------------------------------------
 
 .. list-table:: Robotic arm maneuverability requirements
-   :header-rows: 1
+   :header-rows: 0
 
    * - ID
      - Requirement
      - Description
-   * - Another ID
-     - Another requirement
-     - Another description
 
 Mission-related requirements:
 --------------------------------------------------------------------------------

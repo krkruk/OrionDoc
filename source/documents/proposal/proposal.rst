@@ -70,16 +70,12 @@ Analysis of the requirements
 
 
 .. list-table:: Compilance matrix
-   :header-rows: 1
+   :header-rows: 0
 
    * - REQ-ID
      - Requirement name
      - Description
      - Bidder's comment
-   * - Another REQ-D
-     - Another requiement name
-     - Another description
-     - Another bidder's comment
 
 
 Proposed solution
@@ -179,18 +175,14 @@ Technical and non-technical risks
 
 
 .. list-table:: Major risks table
-   :header-rows: 1
+   :header-rows: 0
 
    * - Risk ID
      - Description
      - Likelihood
      - Severity/impact
      - Mitigation actions
-   * - Another risk ID
-     - Another description
-     - Another likehood
-     - Another severity/impact
-     - Another mitigation actions
+
      
 Management proposal
 ================================================================================
