@@ -13,5 +13,6 @@ Welcome to Orion Project's documentation!
    documents/requirements/system_requirements_document
    documents/proposal/proposal
    documents/verification/vtp
+   documents/verification/tpr
    documents/minutes_of_meeting/minutes_of_meeting
    documents/preliminary_report/preliminary_report
