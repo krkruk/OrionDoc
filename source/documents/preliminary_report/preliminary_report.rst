@@ -116,6 +116,14 @@ Test plans
 Used technologies
 ================================================================================
 
+Chassis
+--------------------------------------------------------------------------------
+
+We have decided to use standard 4-wheel chassis made of aluminum and plywood, which gave us rigid and relatively light base for the rest of rover.
+Every wheel has it's own DC motor taken from electric screwdriver, coupled with the wheel using worm gear. This effectively restricted maximum rover speed below 10m/s, while greatly increasing torque which is much more important.
+
+Chasis is splitten into two separate, independent parts, connected to each other with gear. This kind of solution made whole chassis much more flexible in terms of overcoming bumps in the field, ensuring that at least two wheels at the same time will have traction.
+
 Pre-final system breakdown structure
 ================================================================================
 
