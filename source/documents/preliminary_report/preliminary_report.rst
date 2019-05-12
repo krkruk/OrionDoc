@@ -110,8 +110,6 @@ Mechanics
 Technical requirements fullfillment plan
 ================================================================================
 
-TODO
-
 Test plans
 ================================================================================
 
@@ -130,3 +128,15 @@ Preliminary financial planning
 Present problems and issues
 ================================================================================
 
+.. list-table:: Present problems and potential solutions
+   :header-rows: 1
+
+   * - Problem
+     - Descrption
+     - Solution
+   * - Management issues
+     - There is not enough specialists in the project to effectively push it forward, and make constant progress. We have a lot of rookies which want to learn, but not enough time and people to teach them everything they need to know in order to work in project.
+     - We need to find and recruit more specialists, with particular emphasis on programmers and electronics.
+   * - Hardware stability issues
+     - We are still not able to run all the tests properly, because our hardware (mostly power drivers) is failing in random places due to the bad engineering decisions made because of a hurry.
+     - Re-create hardware the right way, utilizing PCB, COTS parts, and minimizing "garage engineering" factor to necessary miniumum. Regular testing is also required.
