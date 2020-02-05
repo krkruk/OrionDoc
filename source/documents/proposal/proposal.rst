@@ -63,10 +63,31 @@ Applicable documents
 Technical proposal
 ================================================================================
 
+.. A short presentation of the proposed (initial) solution to the challenge. That should state your initial compliance with the rules (understood here as the ERC rules), and clearly present achievable (within the project timeline) ideas, initial project assumptions and an analysis of challenge tasks (including scientific aspects of the Science task). Focus on showing that you read the rules and you know exactly what is required from you. Regarding achievable results, show how advanced your project is planned to be (in reference to what is required) and what is your planned way to achieve such state within the project timeline. Remember to first focus on critical requirements - those which are a must to take part in challenges (e.g. having robust emergency circuit with emergency button), then think about the rest of requirements (e.g. limitation of rover weight can give you more points but is not critical). Even if you are not going to present it at the proposal level, remember about traceability chain: requirement (the rule book based)-->assumption/compliance-->test methodology-->test plan, that will help you to create requirements that are easily verifiable and unitary/atomic. As you see from traceability chain, you need to track your requirements during the progress of the project and between the documents, so it is recommended to give them unique ID.  The assumptions/compliance column should contain a comment how requirement is going to be fulfilled in the design and final system (e.g. ‘relevant emergency circuit will be designed using industrial grade element’) or/and present any problems/discrepancies that are foreseen regarding particular requirement (e.g. ‘no drilling tool is foreseen due to schedule constraints’). The assumptions section should present any further assumptions that are not directly required by rules but are important to present on this level to show quality of the solution you are going to present during ERC. No need for details (e.g. what components will be used etc.) at this stage - you need to assure us that your project is well thought and can fit within the timeline. Consider quick analysis of each challenge task and short description on how your system is going to solve it. Do not forget about managerial aspects like preliminary schedule or project management methodologies.
 
-Analysis of the requirements
+
+Task analysis and resulting requirements
 --------------------------------------------------------------------------------
 
+* Science task
+
+**ADD LATER** 
+
+* Maintenance task
+
+**ADD LATER** 
+
+* Collection task
+
+**ADD LATER** 
+
+* Autonomous task
+
+**ADD LATER** 
+
+* Rover safety
+
+--------------------------------------------------------------------------------
 
 .. list-table:: Compilance matrix
    :header-rows: 0
@@ -201,6 +222,7 @@ Schedule and deliveries
 Technical and non-technical risks
 --------------------------------------------------------------------------------
 
+.. For your initial risk’s assessment think about general aspects of the project from project management, technical and other points of view. Do not go too deep at this stage - if you have some detailed risk on your mind try to capture it in more general but meaningful way. Focus on the project related risks and show that you know what to expect and what might be a problem to deliver on quality and on time. In mitigation put simple advice for yourself what to remember about or how to act to prevent risk occurrence. Additionally, you can add some description/analysis to the table highlighting areas of high risk and other sources and mitigation actions that were not captured in the table.>
 
 .. list-table:: Major risks table
    :header-rows: 0
@@ -225,6 +247,8 @@ Orion Team participated in European Rover Challenge twice.
 
 Project Organization
 --------------------------------------------------------------------------------
+
+.. focus on skills and other projects elements that are useful for good quality project for ERC. Chose only few most important aspects, projects, experiences. Regarding key persons most important is what they bring to the project in terms of experience and skills. Do not forget to mention professionals/companies who advises you in a project
 
 .. Present the primary management scheme in the project
    And justify why it is worth letting us to attend the ERC even though the team
@@ -313,3 +337,8 @@ Development of BLDC driven mobile platforms for use in exploration, transportati
 .. Use of COTS such as Arduino's and Raspberry Pi-s allows reducing overall prices of the robot
    Cheap robots can be considered as a disposable device just like medicine treats most of the sugical tools
    Thus, providing a cheap solution, as our rover, can be considered a great pros for the market. Moreover, free and *libre* software we developed can used by anyone who wants. This may not result in a pile of money but may end up with a kick to other projects.
+   
+Project Evolution
+================================================================================
+.. <recommendation: The last required and really important aspect of the proposal is how your project is going to evolve. Present a plan that you are going to start implementing in parallel to preparations for challenge. Show that your project is not going to be finished and forgotten after challenge. Realise the potential of your project (in all aspects) in terms of further people involvement, research or/and business. Think about how you can use the project to get involved into fruitful research or provide product/service to the others. This should be a realistic (may be ambitious) plan within the next 5 years with potential for further evolution and with reference to market/environment conditions, needs and forecasts. It does not to be a single aspect/idea. Use this exercise to start a movement and do not only describe it on paper but bring it to life!>
+
