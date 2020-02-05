@@ -220,15 +220,20 @@ Key Personnel
 
    * - Marcin M.
      - Supervisor, MacGyver
-     - Veteran of ERC (2 times), Master of Electronic Engineering, employed as a assistant professor at LUT
+     - Veteran of ERC (2 times), PhD Eng. of Electronic Engineering, employed as a assistant professor at LUT
+     
+  * - Wojciech O.
+     - Project Manager, Software Developer
+     - Veteran of ERC (1 time), a student of Software Engineering, interests in statically typed, compiled, programming languages
+   
+  * - Przemysław Markiewicz
+     - Vice Project Manager, Software Developer
 
    * - Krzysztof K.
-     - Project Manager, Sofware Developer
+     - External Expert
      - Veteran of ERC (2 times), Bachelor of Biomedical Engineering, employed as a software developer in space industry, division of Payload Data Processing
 
-   * - Wojciech O.
-     - Vice Project Manager, Software Developer
-     - Veteran of ERC (1 time), a student of Software Engineering, interests in statically typed, compiled, programming languages
+
 
 Time And Financial Costs Proposal
 ================================================================================
