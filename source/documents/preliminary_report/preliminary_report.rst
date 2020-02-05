@@ -122,10 +122,22 @@ Mechanics
    * - REQ-MECH-MAN-006
      - Measurement of force
      - 21, 38
+     
+Electronics
+--------------------------------------------------------------------------------     
+.. list-table:: Manipulator requirements
+   :header-rows: 1
+   :widths: 33 50 17
+
+   * - Abbreviation
+     - Description
+     - [ERC-2020] page
    * - REQ-ELEC-MAN-001
      - Measurement of voltage between 1V and 24V with 0.5V accuracy   
      - 21, 38
-
+     
+Safety
+--------------------------------------------------------------------------------
 .. list-table:: Safety requirements
    :header-rows: 1
    :widths: 33 50 17
@@ -161,6 +173,8 @@ Mechanics
      - Rover must safely handle command overflow
      - 7
      
+Communication
+--------------------------------------------------------------------------------     
 .. list-table:: Communication requirements
    :header-rows: 1
    :widths: 33 50 17
