@@ -50,9 +50,9 @@ Applicable documents
    * - Reference ID
      - Title
      - Short document description
-   * - [ERC-2019]
-     - European Rover Challenge 2019 - STUDENT rules
-     - Rules and formula of ERC2019
+   * - [ERC-2020]
+     - European Rover Challenge 2020 - STUDENT rules
+     - Rules and formula of ERC2020
 
 Technical requirements definitions
 ================================================================================
@@ -62,50 +62,120 @@ Mechanics
 
 .. list-table:: General requirements
    :header-rows: 1
-   :widths: 33 67
+   :widths: 33 50 17 
 
    * - Abbreviation
-     - Descrption
+     - Description
+     - [ERC-2020] page
    * - REQ-MECH-GEN-001
      - Environmental resistance (mostly dust and humidity)
+     - 6
 
 .. list-table:: Chassis requirements
    :header-rows: 1
-   :widths: 33 67
+   :widths: 33 50 17
 
    * - Abbreviation
-     - Descrption
+     - Description
+     - [ERC-2020] page
    * - REQ-MECH-CHAS-001
      - Driving on dry, loose surface (sand, gravel)
+     - 5, 6, 17,19,22,23
    * - REQ-MECH-CHAS-002
      - Driving on hard, dry sufrace (concrete, grass)
+     - 5, 6, 17,19,22,23
    * - REQ-MECH-CHAS-003
      - Rotation in place
+     - 5, 6, 17,19,22,23
    * - REQ-MECH-CHAS-004
      - Driving onto an inclined surface (around 30-40 degrees)
+     - 5, 6, 17,19,22,23
    * - REQ-MECH-CHAS-005
      - Driving parallel to an inclined surface, having part of chassis slopped (by around 30-40 degrees)
+     - 5, 6, 17,19,22,23
    * - REQ-MECH-CHAS-006
      - Driving over off-road faults (minor bumps and holes)
+     - 5, 6, 17,19,22,23
 
 .. list-table:: Manipulator requirements
    :header-rows: 1
-   :widths: 33 67
+   :widths: 33 50 17
 
    * - Abbreviation
-     - Descrption
+     - Description
+     - [ERC-2020] page
    * - REQ-MECH-MAN-001
-     - Rock sample collection, with a minimum weight of 100g
+     - Rock sample collection, with a minimum weight of 25g
+     - 17, 35
    * - REQ-MECH-MAN-002
-     - Soil sample collection, with a minimum weight of 200g
+     - Soil sample collection, with a minimum weight of 25g
+     - 17, 35
    * - REQ-MECH-MAN-003
-     - Picking up an irregularly shaped object, with a minimum weight of 200g
+     - Picking up an irregularly shaped object, with a minimum weight of 300g
+     - 22, 39
    * - REQ-MECH-MAN-004
      - Switching a switch
+     - 21, 38
    * - REQ-MECH-MAN-005
      - Rotating knob to specific position
+     - 21, 38
    * - REQ-MECH-MAN-006
      - Measurement of force
+     - 21, 38
+   * - REQ-ELEC-MAN-001
+     - Measurement of voltage between 1V and 24V with 0.5V accuracy   
+     - 21, 38
+
+.. list-table:: Safety requirements
+   :header-rows: 1
+   :widths: 33 50 17
+
+   * - Abbreviation
+     - Description
+     - [ERC-2020] page
+   * - REQ-SAFE-STOP-001
+     - Accesible red emergency stop button
+     - 7
+   * - REQ-SAFE-STOP-002
+     - Battery cutoff  
+     - 7
+   * - REQ-SAFE-STOP-003
+     - Mechanical robustness of button
+     - 7
+   * - REQ-SAFE-BATT-001
+     - Battery voltage and temperature measurement 
+     - 7
+   * - REQ-SAFE-BATT-002
+     - Mitigation of fire risk  
+     - 7
+   * - REQ-SAFE-INDI-001
+     - Rover equipped with yellow, orange or red indicator lamp visible from at least 10m
+     - 7
+   * - REQ-SAFE-INDI-002
+     - Indicator light must activate 5 seconds before any rover movement
+     - 7
+   * - REQ-SAFE-AUTO-001
+     - Autonomous operation must activate 5 seconds after issuing the command
+     - 7
+   * - REQ-SAFE-AUTO-002
+     - Rover must safely handle command overflow
+     - 7
+     
+.. list-table:: Communication requirements
+   :header-rows: 1
+   :widths: 33 50 17
+   * - Abbreviation
+     - Description
+     - [ERC-2020] page
+   * - REQ-COMM-BAND-001
+     - The system must use legally available frequencies
+     - 7
+   * - REQ-COMM-BAND-002
+     - The system must allow band switching 
+     - 9
+   * - REQ-COMM-FORM-001
+     - The team must provide an RF form with relevant information 
+     - 10     
 
 Technical requirements fullfillment plan
 ================================================================================
@@ -119,10 +189,10 @@ Used technologies
 Chassis
 --------------------------------------------------------------------------------
 
-We have decided to use standard 4-wheel chassis made of aluminum and plywood, which gave us rigid and relatively light base for the rest of rover.
-Every wheel has it's own DC motor taken from electric screwdriver, coupled with the wheel using worm gear. This effectively restricted maximum rover speed below 10m/s, while greatly increasing torque which is much more important.
+We have decided to use standard 4-wheel chassis made of aluminum and policarbonate sheets, which gave us rigid and relatively light base for the rest of rover.
+Every wheel has it's own BLDC motor taken from electric hoverboard. This ensures formidable torque, speed control and high efficiency. The speed of the rover is limited by software.
 
-Chasis is splitten into two separate, independent parts, connected to each other with gear. This kind of solution made whole chassis much more flexible in terms of overcoming bumps in the field, ensuring that at least two wheels at the same time will have traction.
+Chasis is splitten into two separate, independent parts, connected to each other with a shaft. This kind of solution made whole chassis much more flexible in terms of overcoming bumps in the field, ensuring that at least two wheels at the same time will have traction.
 
 Pre-final system breakdown structure
 ================================================================================
