@@ -228,6 +228,7 @@ Key Personnel
    
    * - Przemysław M.
      - Vice Project Manager, Software Developer
+     - PLACEHOLDER HERE
 
    * - Krzysztof K.
      - External Expert
