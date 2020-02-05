@@ -222,11 +222,11 @@ Key Personnel
      - Supervisor, MacGyver
      - Veteran of ERC (2 times), PhD Eng. of Electronic Engineering, employed as a assistant professor at LUT
      
-  * - Wojciech O.
+   * - Wojciech O.
      - Project Manager, Software Developer
      - Veteran of ERC (1 time), a student of Software Engineering, interests in statically typed, compiled, programming languages
    
-  * - Przemysław Markiewicz
+   * - Przemysław M.
      - Vice Project Manager, Software Developer
 
    * - Krzysztof K.
