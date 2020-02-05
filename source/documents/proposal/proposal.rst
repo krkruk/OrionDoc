@@ -80,9 +80,35 @@ Analysis of the requirements
 Proposed solution
 --------------------------------------------------------------------------------
 
-Our rover solution is based on a four wheeled chassis divided longitudinally into two sections connected by a free axle. The front section will be a base for the arm. The back section will house the main computer, measurement equipment, networking and batteries. The RF antenna, emergency power button and indicator light will be mounted on a straight vertical mast no higher than one meter. The arm and the manipulator will include six separate axes of movement, including one for rotation of the whole assembly, two to drive first and second stages and three for the manipulator.
 
 **ADD STUFF AND PICTURES, LOTS AND LOTS OF PICTURES WHEN I GET THEM**
+
+* Mechanical solution
+
+Our rover solution is based on a four wheeled chassis divided longitudinally into two sections connected by a free axle. The front section will be a base for the arm. The back section will house the main computer, measurement equipment, networking and batteries. The RF antenna, emergency power button and indicator light will be mounted on a straight vertical mast no higher than one meter. The arm and the manipulator will include six separate axes of movement, including one for rotation of the whole assembly, two to drive first and second stages and three for the manipulator.
+
+The chassis propulsion will consist of four BLDC motors and motor drivers from hoverboards. The motors and drivers are rated 36V 10A. This solution is self-contained, provides simple maintenance, high efficiency due to the lack of gearing, is easily replacable and offers significant torque. 
+
+* Electronics solution
+
+**ADD LATER** 
+
+* Communication solution
+
+**ADD LATER** 
+
+* Safety solution
+
+**ADD LATER** 
+
+* Data and measurements solution
+
+**ADD LATER** 
+
+* Navigation solution
+
+**ADD LATER** 
+
 
 Feasibility study and integration plan
 --------------------------------------------------------------------------------
@@ -237,6 +263,8 @@ Key Personnel
      - Veteran of ERC (2 times), Bachelor of Biomedical Engineering, employed as a software developer in space industry, division of Payload Data Processing
 
 **ADD MORE DATA AND EXPERIENCE TO THE TEAM**
+
+**ADD FINANCIAL SOURCES (ORION, EMBIQ, POLLUB)**
 
 Time And Financial Costs Proposal
 ================================================================================
