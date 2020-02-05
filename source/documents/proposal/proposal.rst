@@ -27,7 +27,7 @@ The document has been divided into three main chapters:
 The document is meant to draft an overall process to design, construct and manage the interplanetary, Mars rover project that is to be undertaken by the Orion Team.
 
 .. mention here that the documentation can be easily accessed and read by the means of readthedocs.io
-
+<span style="color:blue">some *blue* text</span>
 
 Acronyms
 --------------------------------------------------------------------------------
