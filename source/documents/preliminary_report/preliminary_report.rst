@@ -178,6 +178,7 @@ Communication
 .. list-table:: Communication requirements
    :header-rows: 1
    :widths: 33 50 17
+   
    * - Abbreviation
      - Description
      - [ERC-2020] page
