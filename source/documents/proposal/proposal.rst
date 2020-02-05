@@ -11,7 +11,7 @@ Purpose of the document
 --------------------------------------------------------------------------------
 .. Describe briefly what is to be expected from reading of this document.
 
-The purpose of this document is to raise Orion Team's willingness to participate in European Rover Challenge 2019. Thus, the document provides an analysis of ERC requirements and proposes a solution, which is a complete Mars rover. Moreover, it presents a management methodology and expected time and financial costs.
+The purpose of this document is to raise Orion Team's willingness to participate in European Rover Challenge 2020. Thus, the document provides an analysis of ERC requirements and proposes a solution, which is a complete Mars rover. Moreover, it presents a management methodology and expected time and financial costs.
 
 
 Scope of the document
@@ -56,9 +56,9 @@ Applicable documents
      - Title
      - Short document description
 
-   * - [ERC-2018]
-     - European Rover Challenge 2018 - STUDENT Rules
-     - Rules and formula of ERC2018
+   * - [ERC-2020]
+     - European Rover Challenge 2020 - STUDENT Rules
+     - Rules and formula of ERC2020
 
 
 Technical proposal
