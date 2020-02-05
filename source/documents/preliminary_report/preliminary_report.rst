@@ -80,22 +80,22 @@ Mechanics
      - [ERC-2020] page
    * - REQ-MECH-CHAS-001
      - Driving on dry, loose surface (sand, gravel)
-     - 5, 6, 17,19,22,23
+     - 5, 6, 17, 19, 22, 23
    * - REQ-MECH-CHAS-002
      - Driving on hard, dry sufrace (concrete, grass)
-     - 5, 6, 17,19,22,23
+     - 5, 6, 17, 19, 22, 23
    * - REQ-MECH-CHAS-003
      - Rotation in place
-     - 5, 6, 17,19,22,23
+     - 5, 6, 17, 19, 22, 23
    * - REQ-MECH-CHAS-004
      - Driving onto an inclined surface (around 30-40 degrees)
-     - 5, 6, 17,19,22,23
+     - 5, 6, 17, 19, 22, 23
    * - REQ-MECH-CHAS-005
      - Driving parallel to an inclined surface, having part of chassis slopped (by around 30-40 degrees)
-     - 5, 6, 17,19,22,23
+     - 5, 6, 17, 19, 22, 23
    * - REQ-MECH-CHAS-006
      - Driving over off-road faults (minor bumps and holes)
-     - 5, 6, 17,19,22,23
+     - 5, 6, 17, 19, 22, 23
 
 .. list-table:: Manipulator requirements
    :header-rows: 1
