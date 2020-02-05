@@ -27,7 +27,6 @@ The document has been divided into three main chapters:
 The document is meant to draft an overall process to design, construct and manage the interplanetary, Mars rover project that is to be undertaken by the Orion Team.
 
 .. mention here that the documentation can be easily accessed and read by the means of readthedocs.io
-<span style="color:blue">some *blue* text</span>
 
 Acronyms
 --------------------------------------------------------------------------------
@@ -81,6 +80,9 @@ Analysis of the requirements
 Proposed solution
 --------------------------------------------------------------------------------
 
+Our rover solution is based on a four wheeled chassis divided longitudinally into two sections connected by a free axle. The front section will be a base for the arm. The back section will house the main computer, measurement equipment, networking and batteries. The RF antenna, emergency power button and indicator light will be mounted on a straight vertical mast no higher than one meter. The arm and the manipulator will include six separate axes of movement, including one for rotation of the whole assembly, two to drive first and second stages and three for the manipulator.
+
+**ADD STUFF AND PICTURES, LOTS AND LOTS OF PICTURES WHEN I GET THEM**
 
 Feasibility study and integration plan
 --------------------------------------------------------------------------------
@@ -234,7 +236,7 @@ Key Personnel
      - External Expert
      - Veteran of ERC (2 times), Bachelor of Biomedical Engineering, employed as a software developer in space industry, division of Payload Data Processing
 
-
+**ADD MORE DATA AND EXPERIENCE TO THE TEAM**
 
 Time And Financial Costs Proposal
 ================================================================================
@@ -277,6 +279,8 @@ Time And Financial Costs Proposal
 
 Project Commercialization
 ================================================================================
+
+Development of BLDC driven mobile platforms for use in exploration, transportation, industry and recreation.
 
 .. Use of COTS such as Arduino's and Raspberry Pi-s allows reducing overall prices of the robot
    Cheap robots can be considered as a disposable device just like medicine treats most of the sugical tools
