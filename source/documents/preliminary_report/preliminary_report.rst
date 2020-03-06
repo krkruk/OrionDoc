@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-ERC 2019 Preliminary Report
+ERC 2020 Preliminary Report
 --------------------------------------------------------------------------------
 
 Introduction
@@ -62,7 +62,7 @@ Mechanics
 
 .. list-table:: General requirements
    :header-rows: 1
-   :widths: 25 40 20 40
+   :widths: 25 40 20 20 40
 
    * - Abbreviation
      - Description
