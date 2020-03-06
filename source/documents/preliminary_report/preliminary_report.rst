@@ -62,7 +62,7 @@ Mechanics
 
 .. list-table:: General requirements
    :header-rows: 1
-   :widths: 25 40 15 20 45
+   :widths: 25 40 15 15 50
 
    * - Abbreviation
      - Description
@@ -77,7 +77,7 @@ Mechanics
 
 .. list-table:: Chassis requirements
    :header-rows: 1
-   :widths: 25 40 15 20 45
+   :widths: 25 40 15 15 50
 
    * - Abbreviation
      - Description
