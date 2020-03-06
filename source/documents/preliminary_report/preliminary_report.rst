@@ -62,14 +62,18 @@ Mechanics
 
 .. list-table:: General requirements
    :header-rows: 1
-   :widths: 33 50 17 
+   :widths: 25 40 20 40
 
    * - Abbreviation
      - Description
      - [ERC-2020] page
+     - Test Methodology (Test, Analisis, Review)
+     - Assumptions
    * - REQ-MECH-GEN-001
      - Environmental resistance (mostly dust and humidity)
      - 6
+     - R
+     - The main shell will be able to withstand the elements
 
 .. list-table:: Chassis requirements
    :header-rows: 1
