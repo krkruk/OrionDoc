@@ -67,7 +67,7 @@ Mechanics
    * - Abbreviation
      - Description
      - [ERC-2020] page
-     - Test Methodology
+     - Test Method
      - Assumptions/solutions/testing.
    * - REQ-MECH-GEN-001
      - Environmental resistance (mostly dust and humidity)
@@ -82,7 +82,7 @@ Mechanics
    * - Abbreviation
      - Description
      - [ERC-2020] page
-     - Test Methodology
+     - Test Method
      - Assumptions/solutions/testing.
    * - REQ-MECH-CHAS-001
      - Driving on dry, loose surface (sand, gravel)
