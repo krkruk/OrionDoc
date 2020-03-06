@@ -62,57 +62,57 @@ Mechanics
 
 .. list-table:: General requirements
    :header-rows: 1
-   :widths: 25 40 15 15 50
+   :widths: 25 40 15 10 50
 
    * - Abbreviation
      - Description
      - [ERC-2020] page
-     - Test Methodology (Test, Analysis, Review)
+     - Test Methodology
      - Assumptions/solutions/testing.
    * - REQ-MECH-GEN-001
      - Environmental resistance (mostly dust and humidity)
      - 6
-     - R
+     - Review
      - Proper shell will be prepared. It will be able to withstand the elements.  
 
 .. list-table:: Chassis requirements
    :header-rows: 1
-   :widths: 25 40 15 15 50
+   :widths: 25 40 15 10 50
 
    * - Abbreviation
      - Description
      - [ERC-2020] page
-     - Test Methodology (Test, Analysis, Review)
+     - Test Methodology
      - Assumptions/solutions/testing.
    * - REQ-MECH-CHAS-001
      - Driving on dry, loose surface (sand, gravel)
      - 5, 6, 17, 19, 22, 23
-     - T
+     - Test
      - The rover will  be tested on multiple surfaces including sand, clay, gravel.
    * - REQ-MECH-CHAS-002
      - Driving on hard, dry sufrace (concrete, grass)
      - 5, 6, 17, 19, 22, 23
-     - T
+     - Test
      - The rover will  be tested on multiple surfaces including concrete, tiles, synthetic paneling, grass.
    * - REQ-MECH-CHAS-003
      - Rotation in place
      - 5, 6, 17, 19, 22, 23
-     - T
+     - Test
      - Tests will include driving in an arc, rotating in place and maneuvers in tight spaces.
    * - REQ-MECH-CHAS-004
      - Driving onto an inclined surface (around 30-40 degrees)
      - 5, 6, 17, 19, 22, 23
-     - T
+     - Test
      - The rover will be driven around the university campus which is full of steep hills, depressions and moderately hard terrain.
    * - REQ-MECH-CHAS-005
      - Driving parallel to an inclined surface, having part of chassis slopped (by around 30-40 degrees)
      - 5, 6, 17, 19, 22, 23
-     - T
+     - Test
      - The rover will be driven around the university campus which is full of steep hills, depressions and moderately hard terrain.
    * - REQ-MECH-CHAS-006
      - Driving over off-road faults (minor bumps and holes)
      - 5, 6, 17, 19, 22, 23
-     - T
+     - Test
      - The rover will be driven over small rocks, sharp small inclines, onto and down from curbs and stairs.
 
 .. list-table:: Manipulator requirements
